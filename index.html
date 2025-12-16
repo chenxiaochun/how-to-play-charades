@@ -1452,39 +1452,86 @@
           }
         },
 
-        // 预加载音效
+        // 预加载音效 - 增强版本，添加加载状态跟踪和错误处理
         preloadSounds: function () {
+          // 创建加载音效的辅助函数
+          const loadSound = (type, url) => {
+            try {
+              const audio = new Audio();
+              audio.preload = 'auto';
+              
+              // 添加事件监听器
+              audio.addEventListener('canplaythrough', () => {
+                console.log(`[音效系统] ${type} 音效加载成功`);
+                this.sounds[type] = audio;
+                this.sounds[type].loaded = true;
+              });
+              
+              audio.addEventListener('error', (e) => {
+                console.error(`[音效系统] ${type} 音效加载失败:`, e);
+                this.sounds[type] = { loaded: false, error: e };
+                // 加载失败时，我们仍然可以依赖Web Audio API
+              });
+              
+              audio.src = url;
+            } catch (e) {
+              console.error(`[音效系统] 创建 ${type} 音效对象失败:`, e);
+              this.sounds[type] = { loaded: false, error: e };
+            }
+          };
+          
           // 预加载正确音效
-          const correctSound = new Audio();
-          correctSound.src =
-            "https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3";
-          this.sounds.correct = correctSound;
-
+          loadSound('correct', 'https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3');
+          
           // 预加载错误音效
-          const wrongSound = new Audio();
-          wrongSound.src =
-            "https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3";
-          this.sounds.wrong = wrongSound;
+          loadSound('wrong', 'https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3');
         },
 
-        // 播放音效
+        // 播放音效 - 优化版本，添加备用播放机制
         play: function (type) {
           try {
             const sound = this.sounds[type];
             if (sound) {
               sound.currentTime = 0; // 重置播放位置
               sound.play().catch((error) => {
-                console.warn("无法播放音效:", error);
+                console.warn("无法播放外部音效，尝试使用Web Audio API:", error);
+                // 如果Audio元素播放失败，自动切换到Web Audio API播放
+                this.playWithWebAudio(type);
               });
+            } else {
+              // 如果没有预加载的音效，直接使用Web Audio API
+              this.playWithWebAudio(type);
             }
           } catch (e) {
-            console.warn("播放音效出错:", e);
+            console.warn("播放音效出错，尝试使用备用方案:", e);
+            // 最后的备用方案
+            try {
+              this.playWithWebAudio(type);
+            } catch (backupError) {
+              console.error("所有音效播放方式都失败:", backupError);
+            }
           }
         },
 
-        // 使用Web Audio API播放音效（备用方法）
+        // 使用Web Audio API播放音效（备用方法）- 增强版本
         playWithWebAudio: function (type) {
           try {
+            // 确保audioContext已初始化
+            if (!this.audioContext) {
+              console.warn("Web Audio API未初始化，尝试创建");
+              try {
+                if (window.AudioContext || window.webkitAudioContext) {
+                  this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                } else {
+                  console.error("浏览器不支持Web Audio API");
+                  return;
+                }
+              } catch (initError) {
+                console.error("无法初始化Web Audio API:", initError);
+                return;
+              }
+            }
+            
             if (!this.audioContext) return;
 
             // 确保音频上下文处于活动状态
@@ -1539,14 +1586,26 @@
           }
         },
 
-        // 确保音频上下文处于活动状态
+        // 确保音频上下文处于活动状态 - 增强版本
         ensureAudioContextActive: function () {
           try {
-            if (this.audioContext && this.audioContext.state === "suspended") {
-              this.audioContext.resume();
+            if (this.audioContext) {
+              if (this.audioContext.state === "suspended") {
+                this.audioContext.resume().then(() => {
+                  console.log("[音效系统] 音频上下文已恢复活动状态");
+                }).catch(resumeError => {
+                  console.error("[音效系统] 恢复音频上下文失败:", resumeError);
+                });
+              } else if (this.audioContext.state === "closed") {
+                console.warn("[音效系统] 音频上下文已关闭，重新创建");
+                // 如果上下文已关闭，重新创建
+                if (window.AudioContext || window.webkitAudioContext) {
+                  this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+              }
             }
           } catch (e) {
-            console.warn("无法激活音频上下文:", e);
+            console.error("[音效系统] 处理音频上下文时出错:", e);
           }
         },
       };
