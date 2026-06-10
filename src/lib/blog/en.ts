@@ -242,6 +242,125 @@ const en: BlogMap = {
     ],
     cta: "Play Free Charades Now",
   },
+  "thanksgiving-charades": {
+    slug: "thanksgiving-charades",
+    meta: {
+      title: "Thanksgiving Charades - Word List & Family Party Ideas",
+      description:
+        "Thanksgiving charades words and family game ideas for holiday gatherings. Easy prompts for kids, adults, and mixed-age groups.",
+    },
+    excerpt:
+      "Low-prep Thanksgiving party fun: turkey-day word lists, family-friendly rules, and quick formats for holiday tables.",
+    date: "June 14, 2026",
+    datePublished: "2026-06-14",
+    dateModified: "2026-06-14",
+    author: "Charades Game Team",
+    sections: [
+      {
+        heading: "Why Play Charades on Thanksgiving?",
+        paragraphs: [
+          "Thanksgiving gatherings often need a simple activity while food finishes or after dessert. Charades requires no boards or batteries—just words, a timer, and willing players.",
+          "It works across generations when you choose easy, festive prompts and keep rounds short.",
+        ],
+      },
+      {
+        heading: "Thanksgiving Charades Word Ideas",
+        list: [
+          "Turkey, pumpkin pie, cranberry sauce, mashed potatoes, gravy",
+          "Parade balloon, football game, wishbone, cornucopia",
+          "Cooking dinner, setting the table, washing dishes, taking a nap",
+          "Pilgrim, Native American heritage (use respectfully), harvest moon",
+          "Black Friday shopping, gratitude, family photo, road trip home",
+        ],
+      },
+      {
+        heading: "Family-Friendly Rules",
+        list: [
+          "Use two teams mixing kids and adults.",
+          "Allow 75–90 second rounds for younger actors.",
+          "Keep scores light—or skip scoring entirely.",
+          "Choose words everyone at the table can act safely in a dining room.",
+        ],
+      },
+      {
+        heading: "Quick Party Formats",
+        list: [
+          "Gratitude charades: act something you are thankful for.",
+          "Dinner table relay: one actor per course break.",
+          "Kids vs adults with easy words for children, phrases for adults.",
+        ],
+      },
+      {
+        heading: "Use Our Free Online Game",
+        paragraphs: [
+          "Filter easy words on our charades generator, cast a phone timer to the TV, and start in under a minute.",
+          "Pair with our Christmas charades guide when the holiday season continues into December.",
+        ],
+      },
+    ],
+    cta: "Play Thanksgiving Charades Online",
+  },
+  "charades-for-classroom": {
+    slug: "charades-for-classroom",
+    meta: {
+      title: "Charades for the Classroom - ESL & Vocabulary Activities",
+      description:
+        "Use charades in the classroom for ESL, vocabulary review, and active learning. Rules, word ideas, and tips for teachers.",
+    },
+    excerpt:
+      "Teachers: use charades for vocabulary review, ESL speaking warm-ups, and kinesthetic learning—with classroom-safe rules.",
+    date: "June 14, 2026",
+    datePublished: "2026-06-14",
+    dateModified: "2026-06-14",
+    author: "Charades Game Team",
+    sections: [
+      {
+        heading: "Why Charades Works in Class",
+        paragraphs: [
+          "Charades turns vocabulary into movement, which helps memory and engagement—especially for ESL learners and younger students.",
+          "It also builds non-verbal communication skills and keeps energy high without competitive video games.",
+        ],
+      },
+      {
+        heading: "Classroom-Safe Rules",
+        list: [
+          "No running—actors stay at the front of the room.",
+          "No speaking or mouthing words.",
+          "Respectful acting only; teacher approves word list in advance.",
+          "Use a visible timer (45–60 seconds).",
+          "Allow passes on words that feel too hard.",
+        ],
+      },
+      {
+        heading: "Word List Ideas by Subject",
+        list: [
+          "Animals: elephant, penguin, butterfly, shark",
+          "Verbs: read, swim, cook, climb, celebrate",
+          "Jobs: doctor, engineer, artist, farmer",
+          "Science: volcano, magnet, plant growth, recycling",
+          "Literature: famous characters from assigned reading",
+        ],
+      },
+      {
+        heading: "Activity Formats",
+        list: [
+          "Vocabulary review before a quiz—teams act weekly word lists.",
+          "ESL warm-up: act daily routines or classroom objects.",
+          "Silent review: one student acts, class writes guesses on mini whiteboards.",
+          "Team tournament across homeroom periods with a simple bracket.",
+        ],
+      },
+      {
+        heading: "Tips for Teachers",
+        paragraphs: [
+          "Preview words to avoid embarrassment or culturally sensitive topics.",
+          "Pair confident students with shy partners for the first round.",
+          "Project our free online charades game on a smartboard for instant word draws and category filters.",
+        ],
+      },
+    ],
+    cta: "Try Classroom Charades Online",
+  },
 };
 
 export default en;

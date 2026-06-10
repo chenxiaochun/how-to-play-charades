@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { CONSENT_EVENT, hasConsentCookie } from "@/lib/consent";
 
 const AD_CLIENT =
   process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-3519124760724427";
@@ -13,20 +14,28 @@ type AdUnitProps = {
 
 export function AdUnit({ slot, className = "", label = "Advertisement" }: AdUnitProps) {
   const initialized = useRef(false);
+  const [consented, setConsented] = useState(false);
   const adSlot = slot ?? process.env.NEXT_PUBLIC_ADSENSE_SLOT;
 
   useEffect(() => {
-    if (!adSlot || initialized.current) return;
+    const sync = () => setConsented(hasConsentCookie());
+    sync();
+    window.addEventListener(CONSENT_EVENT, sync);
+    return () => window.removeEventListener(CONSENT_EVENT, sync);
+  }, []);
+
+  useEffect(() => {
+    if (!adSlot || !consented || initialized.current) return;
     initialized.current = true;
     try {
       const win = window as Window & { adsbygoogle?: unknown[] };
       (win.adsbygoogle = win.adsbygoogle || []).push({});
     } catch {
-      // AdSense may be blocked by consent or ad blockers.
+      // AdSense may be blocked by ad blockers.
     }
-  }, [adSlot]);
+  }, [adSlot, consented]);
 
-  if (!adSlot) return null;
+  if (!adSlot || !consented) return null;
 
   return (
     <aside

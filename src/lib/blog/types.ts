@@ -2,6 +2,8 @@ export const BLOG_SLUGS = [
   "online-free-word-guess-games",
   "charades-rules-for-beginners",
   "charades-vs-pictionary",
+  "thanksgiving-charades",
+  "charades-for-classroom",
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];

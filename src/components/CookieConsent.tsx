@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-const CONSENT_COOKIE = "cookie-consent";
+import { CONSENT_COOKIE, CONSENT_EVENT } from "@/lib/consent";
 
 type CookieConsentProps = {
   locale: string;
@@ -29,6 +28,7 @@ export function CookieConsent({
 
   const accept = () => {
     document.cookie = `${CONSENT_COOKIE}=1;path=/;max-age=31536000;SameSite=Lax`;
+    window.dispatchEvent(new Event(CONSENT_EVENT));
     setVisible(false);
   };
 

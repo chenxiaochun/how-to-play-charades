@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
-import { GoogleAdSense } from "@/components/GoogleAdSense";
-import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { ConsentScripts } from "@/components/ConsentScripts";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -37,8 +36,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans">
         {children}
-        <GoogleAnalytics />
-        <GoogleAdSense />
+        <ConsentScripts />
       </body>
     </html>
   );

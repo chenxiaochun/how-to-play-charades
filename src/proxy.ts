@@ -11,9 +11,7 @@ function resolveLocale(request: NextRequest): Locale {
   const cookie = request.cookies.get(PREFERRED_LOCALE_COOKIE)?.value;
   if (cookie === "en" || cookie === "zh") return cookie;
 
-  const accept = request.headers.get("accept-language") ?? "";
-  if (/\bzh(-|_|$)/i.test(accept)) return "zh";
-
+  // First visit: always English. Chinese only after explicit language switch.
   return DEFAULT_LOCALE;
 }
 
