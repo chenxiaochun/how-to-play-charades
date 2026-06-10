@@ -53,7 +53,17 @@ Would love feedback on word difficulty or missing categories. Not monetized beyo
 
 ## AlternativeTo 提交
 
-**URL:** https://alternativeto.net/software/submit/
+> ⚠️ `https://alternativeto.net/software/submit/` 已 404，请按下方流程操作。
+
+**注册：** https://alternativeto.net/（右上角 Sign up）
+
+**提交入口（登录后）：** 右上角 **用户头像** → **Suggest new application**（建议新应用）
+
+**官方说明：** https://alternativeto.net/faq/#add-a-new-application
+
+**注意：** 新账号注册后需 **等待约 1 周** 才能提交新应用（反垃圾策略）。
+
+**备选路径：** 搜索已有产品（如 Heads Up!、Charades!），进入产品页 → **Contribute to this page** → **Suggest Alternatives**，把你的站作为替代品提交。
 
 | Field | Content |
 |-------|---------|
