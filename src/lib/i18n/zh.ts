@@ -8,9 +8,14 @@ const zh: Dictionary = {
         "学习你比我猜（Charades）的完整规则与技巧，免费在线游戏提供 300+ 精选词汇，适合聚会、团建和家庭娱乐。",
     },
     blog: {
-      title: "在线免费猜词游戏：益处、策略与最佳实践",
+      title: "你比我猜博客 - 规则、技巧与聚会游戏指南",
       description:
-        "了解在线免费猜词游戏的认知益处、实用策略，以及如何提升词汇量、思维能力和社交互动。",
+        "阅读你比我猜入门规则、派对游戏对比、猜词策略与免费在线玩法等文章。",
+    },
+    about: {
+      title: "关于我们 - 免费在线你比我猜",
+      description:
+        "了解 How to Play Charades 的使命：为家庭和团队提供免费规则、词库与在线你比我猜游戏。",
     },
     userStatement: {
       title: "用户声明 - 你比我猜游戏",
@@ -48,6 +53,7 @@ const zh: Dictionary = {
     tips: "技巧",
     userStatement: "用户声明",
     privacyPolicy: "隐私政策",
+    about: "关于我们",
     playNow: "免费玩你比我猜",
     viewRules: "查看规则与技巧",
   },
@@ -65,6 +71,13 @@ const zh: Dictionary = {
     userStatement: "用户声明",
     privacyPolicy: "隐私政策",
     guides: "指南",
+    about: "关于我们",
+  },
+  blogIndex: {
+    hubTitle: "你比我猜博客与聚会游戏文章",
+    hubIntro:
+      "涵盖你比我猜规则、猜词游戏、聚会创意与免费在线玩法，适合家庭、课堂与团建。",
+    readMore: "阅读全文",
   },
   guides: {
     sectionTitle: "热门你比我猜指南",
@@ -206,8 +219,46 @@ const zh: Dictionary = {
       charadesForAdults: "成人你比我猜",
       charadesThemes: "主题专场",
       christmasCharades: "圣诞你比我猜",
+      halloweenCharades: "万圣节你比我猜",
+      teamBuildingCharades: "团建你比我猜",
       allGuides: "全部指南",
     },
+  },
+  about: {
+    sections: [
+      {
+        heading: "我们的使命",
+        paragraphs: [
+          "How to Play Charades 致力于提供免费的你比我猜规则、词汇灵感与在线游戏，无需下载或注册。",
+          "我们希望帮助家庭聚会、课堂活动和公司团建快速开始一场可靠、有趣的猜词游戏。",
+        ],
+      },
+      {
+        heading: "网站提供什么",
+        list: [
+          "官方风格规则与新手友好技巧",
+          "300+ 精选词汇，多类别与难度",
+          "免费在线你比我猜：计时、历史记录与跳过",
+          "儿童、成人、节日与聚会等专题指南",
+          "中英文双语内容",
+        ],
+      },
+      {
+        heading: "谁维护本站",
+        paragraphs: [
+          "本站由 Charades Game Team 维护，会根据玩家反馈和季节活动更新词库与指南。",
+          "隐私说明请参阅隐私政策，使用条款请参阅用户声明。",
+        ],
+      },
+      {
+        heading: "联系与反馈",
+        paragraphs: [
+          "欢迎建议新的词汇类别、指南主题和博客选题。欢迎把本站分享给朋友，并常回来看看新文章。",
+        ],
+      },
+    ],
+    backHome: "返回首页",
+    lastUpdated: "最后更新：2026年6月12日",
   },
   cookie: {
     message: "我们使用 Cookie 进行分析和广告投放，以改善您的浏览体验。",
@@ -216,94 +267,6 @@ const zh: Dictionary = {
   },
   ad: {
     label: "广告",
-  },
-  blog: {
-    date: "2026年6月10日",
-    author: "Charades Game Team",
-    sections: [
-      {
-        heading: "在线免费猜词游戏的兴起",
-        paragraphs: [
-          "在线猜词游戏将娱乐与思维训练结合，从经典的你比我猜到各类文字谜题，各年龄段都能参与。",
-          "相比实体桌游，在线版本随时可玩，也让异地的朋友能一起参与。",
-        ],
-      },
-      {
-        heading: "玩在线猜词游戏的好处",
-        subsections: [
-          {
-            heading: "认知发展",
-            content: "猜词游戏能锻炼记忆、注意力和问题解决能力。",
-          },
-          {
-            heading: "词汇提升",
-            content: "在趣味互动中接触新词汇，对语言学习者尤其有帮助。",
-          },
-          {
-            heading: "社交互动",
-            content: "多人模式让朋友和家人保持联系，增进互动。",
-          },
-          {
-            heading: "缓解压力",
-            content: "轻松的游戏节奏有助于放松身心。",
-          },
-        ],
-      },
-      {
-        heading: "常见的在线猜词游戏类型",
-        subsections: [
-          {
-            heading: "你比我猜 (Charades)",
-            content: "用肢体表演词汇，队友猜词，在线版通常带分类、计时和词库。",
-          },
-          {
-            heading: "Hangman 猜单词",
-            content: "猜字母拼出单词，适合练习拼写和词汇。",
-          },
-          {
-            heading: "词语联想",
-            content: "围绕主题快速联想相关词，锻炼发散思维。",
-          },
-          {
-            heading: "填字游戏",
-            content: "根据提示在格子中填词，挑战词汇与联想能力。",
-          },
-        ],
-      },
-      {
-        heading: "猜词游戏实用策略",
-        list: [
-          "拼写类游戏先从元音和常见辅音开始。",
-          "留意词形模式和常见前后缀。",
-          "结合类别缩小答案范围。",
-          "经常练习以提升速度和信心。",
-          "表演类游戏要在创意与清晰之间取得平衡。",
-        ],
-      },
-      {
-        heading: "组织在线猜词活动的建议",
-        orderedList: [
-          "选择稳定、易用的平台。",
-          "开始前先说明规则。",
-          "根据参与者水平调整难度。",
-          "控制单局时长，保持参与度。",
-          "轮换角色，让每个人都有机会。",
-        ],
-      },
-      {
-        heading: "如何开始玩在线猜词游戏",
-        paragraphs: ["尝试不同玩法，从简单难度开始，邀请朋友一起，养成定期游戏的习惯。"],
-        orderedList: [
-          "探索不同类型的游戏。",
-          "从简单难度入手。",
-          "邀请朋友或家人。",
-          "安排固定的短时练习。",
-          "逐步提升挑战，享受乐趣。",
-        ],
-      },
-    ],
-    quote: "猜词游戏不仅有趣，还能锻炼思维、增进交流，让学习变得轻松。",
-    cta: "立即玩你比我猜",
   },
   userStatement: {
     sections: [

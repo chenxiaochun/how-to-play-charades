@@ -4,6 +4,7 @@ import { HREFLANG, LOCALES, SITE_URL, type Locale } from "@/lib/site";
 type PageKey =
   | "home"
   | "blog"
+  | "about"
   | "userStatement"
   | "privacyPolicy"
   | "rules"

@@ -289,6 +289,103 @@ const en: TopicMap = {
     ],
     cta: "Play Christmas Charades Online",
   },
+  "halloween-charades": {
+    meta: {
+      title: "Halloween Charades - Spooky Words & Party Game Ideas",
+      description:
+        "Halloween charades word lists for kids and adults: monsters, costumes, movies, and party rules for October gatherings.",
+    },
+    breadcrumb: "Halloween Charades",
+    heading: "Halloween Charades: Spooky Fun for Every Age",
+    intro:
+      "Halloween charades adds seasonal flair to your October party. Use these spooky-but-friendly words and formats for classrooms, family nights, and costume parties.",
+    sections: [
+      {
+        heading: "Halloween Charades Word Ideas",
+        list: [
+          "Vampire, witch, zombie, ghost, werewolf, mummy",
+          "Trick or treat, haunted house, jack-o-lantern, cobweb",
+          "Broomstick, cauldron, full moon, candy bucket",
+          "Dracula, Frankenstein, Harry Potter, Hocus Pocus",
+          "Carving pumpkins, bobbing for apples, costume contest",
+        ],
+      },
+      {
+        heading: "Kid-Safe Halloween Rules",
+        list: [
+          "Skip graphic or scary words for younger children.",
+          "Use easy creatures and actions before harder movie titles.",
+          "Pair nervous kids with a buddy actor.",
+          "Keep rounds short—45 to 60 seconds.",
+        ],
+      },
+      {
+        heading: "Party Formats",
+        list: [
+          "Costume charades: act only as your costume character.",
+          "Monster mash: each round is a different creature category.",
+          "Pumpkin timer: use our online timer for fast spooky rounds.",
+        ],
+      },
+      {
+        heading: "Hosting Tips",
+        paragraphs: [
+          "Decorate the play area with dim lights and Halloween props for atmosphere.",
+          "Combine with our free charades game—filter easy words for mixed-age groups.",
+        ],
+      },
+    ],
+    cta: "Play Halloween Charades Online",
+  },
+  "team-building-charades": {
+    meta: {
+      title: "Team Building Charades - Office Icebreaker Ideas & Rules",
+      description:
+        "Run charades for team building and office icebreakers: formats, workplace-safe words, and tips for hybrid or in-person groups.",
+    },
+    breadcrumb: "Team Building Charades",
+    heading: "Team Building Charades for Offices & Groups",
+    intro:
+      "Charades is one of the fastest icebreakers for new teams, retreats, and hybrid meetings. These formats keep play inclusive, professional, and fun.",
+    sections: [
+      {
+        heading: "Why Charades Works for Team Building",
+        list: [
+          "Low prep—no materials beyond a word list and timer.",
+          "Encourages non-verbal communication and collaboration.",
+          "Breaks hierarchy: everyone performs and guesses.",
+          "Fits 10–40 players in teams or all-play mode.",
+        ],
+      },
+      {
+        heading: "Workplace-Safe Word Ideas",
+        list: [
+          "Actions: brainstorming, presentation, coffee break, deadline",
+          "Objects: laptop, whiteboard, sticky note, headset",
+          "Soft humor: Monday morning, team lunch, Zoom call",
+          "Avoid sensitive topics, politics, or inside jokes that exclude new hires.",
+        ],
+      },
+      {
+        heading: "Recommended Formats",
+        list: [
+          "Department vs department teams with 5-round cap.",
+          "Reverse charades for large all-hands meetings.",
+          "Theme round: company values acted as phrases.",
+          "5-minute warm-up before longer workshops.",
+        ],
+      },
+      {
+        heading: "Facilitator Checklist",
+        paragraphs: [
+          "Explain rules clearly, emphasize respect and inclusivity.",
+          "Use our online charades tool for instant words and timers in hybrid rooms.",
+          "Debrief briefly: what made communication effective?",
+        ],
+      },
+    ],
+    cta: "Start a Team Charades Game",
+  },
 };
 
 export default en;

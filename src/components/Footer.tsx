@@ -12,6 +12,7 @@ export function Footer({ locale, dict }: FooterProps) {
     { href: `/${locale}/blog`, label: dict.nav.blog },
     { href: `/${locale}/rules`, label: dict.nav.rules },
     { href: `/${locale}/tips`, label: dict.nav.tips },
+    { href: `/${locale}/about`, label: dict.nav.about },
     { href: `/${locale}/user-statement`, label: dict.nav.userStatement },
     { href: `/${locale}/privacy-policy`, label: dict.nav.privacyPolicy },
   ];
@@ -41,6 +42,14 @@ export function Footer({ locale, dict }: FooterProps) {
     {
       href: `/${locale}/christmas-charades`,
       label: dict.footer.guides.christmasCharades,
+    },
+    {
+      href: `/${locale}/halloween-charades`,
+      label: dict.footer.guides.halloweenCharades,
+    },
+    {
+      href: `/${locale}/team-building-charades`,
+      label: dict.footer.guides.teamBuildingCharades,
     },
   ];
 

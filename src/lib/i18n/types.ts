@@ -4,6 +4,7 @@ export type Dictionary = {
   meta: {
     home: { title: string; description: string };
     blog: { title: string; description: string };
+    about: { title: string; description: string };
     userStatement: { title: string; description: string };
     privacyPolicy: { title: string; description: string };
     rules: { title: string; description: string };
@@ -19,6 +20,7 @@ export type Dictionary = {
     tips: string;
     userStatement: string;
     privacyPolicy: string;
+    about: string;
     playNow: string;
     viewRules: string;
   };
@@ -35,6 +37,12 @@ export type Dictionary = {
     userStatement: string;
     privacyPolicy: string;
     guides: string;
+    about: string;
+  };
+  blogIndex: {
+    hubTitle: string;
+    hubIntro: string;
+    readMore: string;
   };
   guides: {
     sectionTitle: string;
@@ -100,8 +108,19 @@ export type Dictionary = {
       charadesForAdults: string;
       charadesThemes: string;
       christmasCharades: string;
+      halloweenCharades: string;
+      teamBuildingCharades: string;
       allGuides: string;
     };
+  };
+  about: {
+    sections: Array<{
+      heading: string;
+      paragraphs?: string[];
+      list?: string[];
+    }>;
+    backHome: string;
+    lastUpdated: string;
   };
   cookie: {
     message: string;
@@ -110,19 +129,6 @@ export type Dictionary = {
   };
   ad: {
     label: string;
-  };
-  blog: {
-    date: string;
-    author: string;
-    sections: Array<{
-      heading: string;
-      paragraphs?: string[];
-      subsections?: Array<{ heading: string; content: string }>;
-      list?: string[];
-      orderedList?: string[];
-    }>;
-    quote: string;
-    cta: string;
   };
   userStatement: {
     sections: Array<{ heading: string; paragraphs: string[]; list?: string[] }>;

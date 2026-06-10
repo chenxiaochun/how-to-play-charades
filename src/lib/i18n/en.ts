@@ -8,9 +8,14 @@ const en: Dictionary = {
         "Learn how to play charades with official rules, expert tips, and a free online game with 300+ curated words. Perfect for parties, team building, and family fun.",
     },
     blog: {
-      title: "Online Free Word Guess Games: Benefits, Strategies & Best Practices",
+      title: "Charades Blog - Rules, Tips & Party Game Guides",
       description:
-        "Discover the benefits of online free word guess games, effective strategies, and how they enhance vocabulary, critical thinking, and social interaction.",
+        "Read charades articles on rules for beginners, party game comparisons, word guess strategies, and free online play tips.",
+    },
+    about: {
+      title: "About How to Play Charades - Free Online Party Game",
+      description:
+        "Learn about How to Play Charades: our mission to provide free charades rules, word lists, and an online game for families and teams.",
     },
     userStatement: {
       title: "User Statement - Charades Game",
@@ -51,6 +56,7 @@ const en: Dictionary = {
     tips: "Tips",
     userStatement: "User Statement",
     privacyPolicy: "Privacy Policy",
+    about: "About",
     playNow: "Play Charades Free",
     viewRules: "View Rules & Tips",
   },
@@ -68,6 +74,13 @@ const en: Dictionary = {
     userStatement: "User Statement",
     privacyPolicy: "Privacy Policy",
     guides: "Guides",
+    about: "About",
+  },
+  blogIndex: {
+    hubTitle: "Charades Blog & Party Game Articles",
+    hubIntro:
+      "Guides on charades rules, word games, party ideas, and free online play—updated for families, classrooms, and team events.",
+    readMore: "Read article",
   },
   guides: {
     sectionTitle: "Popular Charades Guides",
@@ -219,8 +232,46 @@ const en: Dictionary = {
       charadesForAdults: "Charades for Adults",
       charadesThemes: "Charades Themes",
       christmasCharades: "Christmas Charades",
+      halloweenCharades: "Halloween Charades",
+      teamBuildingCharades: "Team Building Charades",
       allGuides: "All Guides",
     },
+  },
+  about: {
+    sections: [
+      {
+        heading: "Our Mission",
+        paragraphs: [
+          "How to Play Charades is a free resource for learning charades rules, discovering word ideas, and playing online without downloads or sign-up.",
+          "We built this site for family nights, classrooms, holiday parties, and office team-building events where hosts need a quick, reliable game.",
+        ],
+      },
+      {
+        heading: "What We Offer",
+        list: [
+          "Official-style charades rules and beginner-friendly tips",
+          "300+ curated words across categories and difficulty levels",
+          "Free online charades with timer, history, and skip",
+          "Topic guides for kids, adults, holidays, and parties",
+          "Bilingual content in English and Chinese",
+        ],
+      },
+      {
+        heading: "Who Maintains This Site",
+        paragraphs: [
+          "The site is maintained by the Charades Game Team. We update word lists and guides regularly based on player feedback and seasonal events.",
+          "For privacy practices, see our Privacy Policy. For terms of use, see the User Statement.",
+        ],
+      },
+      {
+        heading: "Contact & Feedback",
+        paragraphs: [
+          "We welcome suggestions for new word categories, guides, and blog topics. Use the site, share it with friends, and check back for new articles.",
+        ],
+      },
+    ],
+    backHome: "Back to Home",
+    lastUpdated: "Last updated: June 12, 2026",
   },
   cookie: {
     message:
@@ -230,105 +281,6 @@ const en: Dictionary = {
   },
   ad: {
     label: "Advertisement",
-  },
-  blog: {
-    date: "June 10, 2026",
-    author: "Charades Game Team",
-    sections: [
-      {
-        heading: "The Rise of Online Free Word Guess Games",
-        paragraphs: [
-          "Online word guess games combine entertainment with cognitive practice. From charades to puzzles, they are easy to access on any device.",
-          "Unlike board games, online formats remove setup friction and help groups play together even when apart.",
-        ],
-      },
-      {
-        heading: "Benefits of Playing Online Free Word Guess Games",
-        subsections: [
-          {
-            heading: "Cognitive Development",
-            content:
-              "Word games exercise memory, attention, and problem-solving through repeated recall and pattern recognition.",
-          },
-          {
-            heading: "Vocabulary Enhancement",
-            content:
-              "Players encounter new words and phrases in context, which supports language learners and students.",
-          },
-          {
-            heading: "Social Interaction",
-            content:
-              "Multiplayer formats keep friends and families connected during gatherings or remote hangouts.",
-          },
-          {
-            heading: "Stress Relief",
-            content:
-              "Short, playful sessions offer a healthy break from routine and can improve mood.",
-          },
-        ],
-      },
-      {
-        heading: "Popular Types of Online Free Word Guess Games",
-        subsections: [
-          {
-            heading: "Charades",
-            content:
-              "Players act out words without speaking while teammates guess. Online versions add categories, timers, and word lists.",
-          },
-          {
-            heading: "Hangman",
-            content:
-              "Guess letters before the figure is complete. Great for spelling and vocabulary drills.",
-          },
-          {
-            heading: "Word Association Games",
-            content:
-              "Players chain related words quickly, encouraging flexible thinking.",
-          },
-          {
-            heading: "Crossword Puzzles",
-            content:
-              "Clue-based grids challenge recall and lateral connections between meanings.",
-          },
-        ],
-      },
-      {
-        heading: "Effective Strategies for Word Guess Games",
-        list: [
-          "Start with common letters in spelling-based games.",
-          "Look for word patterns and familiar prefixes or suffixes.",
-          "Use category context to eliminate unlikely answers.",
-          "Practice regularly to build speed and confidence.",
-          "Balance creativity with clear communication in acting games.",
-        ],
-      },
-      {
-        heading: "Tips for Hosting Online Word Guess Game Sessions",
-        orderedList: [
-          "Choose a stable, easy-to-use platform.",
-          "Explain rules before the first round.",
-          "Match difficulty to the group's experience.",
-          "Keep sessions short enough to maintain energy.",
-          "Rotate roles so everyone participates.",
-        ],
-      },
-      {
-        heading: "Getting Started with Online Word Guess Games",
-        paragraphs: [
-          "Try a few formats, start with beginner-friendly settings, invite friends, and build a regular play habit.",
-        ],
-        orderedList: [
-          "Explore different game types.",
-          "Start with easy difficulty.",
-          "Invite friends or family.",
-          "Schedule short practice sessions.",
-          "Have fun and increase challenge gradually.",
-        ],
-      },
-    ],
-    quote:
-      "Word games exercise the mind, build connections, and make learning feel playful.",
-    cta: "Play Charades Game Now",
   },
   userStatement: {
     sections: [
