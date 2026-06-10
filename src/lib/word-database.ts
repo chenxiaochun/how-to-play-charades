@@ -1,14 +1,18 @@
 import type { Locale } from "@/lib/site";
+import { extraWords } from "./word-database-extra";
 
 export type Category = "animals" | "movies" | "sports" | "food" | "famous";
 export type Difficulty = "easy" | "medium" | "hard";
+
+const CATEGORIES: Category[] = ["animals", "movies", "sports", "food", "famous"];
+const DIFFICULTIES: Difficulty[] = ["easy", "medium", "hard"];
 
 type WordDatabase = Record<
   Locale,
   Record<Difficulty, Record<Category, string[]>>
 >;
 
-export const wordDatabase: WordDatabase = {
+const baseWordDatabase: WordDatabase = {
   zh: {
     easy: {
       animals: ["猫", "狗", "大象", "老虎", "狮子", "长颈鹿", "猴子", "熊猫", "兔子", "鸟"],
@@ -56,6 +60,32 @@ export const wordDatabase: WordDatabase = {
     },
   },
 };
+
+function mergeWordDatabase(base: WordDatabase, extra: WordDatabase): WordDatabase {
+  const merged = structuredClone(base);
+  for (const locale of Object.keys(base) as Locale[]) {
+    for (const difficulty of DIFFICULTIES) {
+      for (const category of CATEGORIES) {
+        merged[locale][difficulty][category] = [
+          ...base[locale][difficulty][category],
+          ...extra[locale][difficulty][category],
+        ];
+      }
+    }
+  }
+  return merged;
+}
+
+export const wordDatabase = mergeWordDatabase(baseWordDatabase, extraWords);
+
+export function countWordsForLocale(locale: Locale): number {
+  return DIFFICULTIES.flatMap((difficulty) =>
+    CATEGORIES.flatMap((category) => wordDatabase[locale][difficulty][category]),
+  ).length;
+}
+
+/** Curated word count per language (merged base + extended pools). */
+export const WORD_COUNT = countWordsForLocale("en");
 
 function getWordPool(
   locale: Locale,

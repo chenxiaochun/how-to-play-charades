@@ -5,7 +5,7 @@ const en: Dictionary = {
     home: {
       title: "How to Play Charades - Rules, Tips & Free Online Game",
       description:
-        "Learn how to play charades with official rules, expert tips, and a free online game with 150+ curated words. Perfect for parties, team building, and family fun.",
+        "Learn how to play charades with official rules, expert tips, and a free online game with 300+ curated words. Perfect for parties, team building, and family fun.",
     },
     blog: {
       title: "Online Free Word Guess Games: Benefits, Strategies & Best Practices",
@@ -51,7 +51,7 @@ const en: Dictionary = {
   header: {
     title: "How to Play Charades: Complete Guide with Rules and Tips",
     subtitle:
-      "Learn exactly how to play charades with our comprehensive guide. Includes official rules, expert tips, and 150+ curated charades words. Perfect for parties, team building, and family gatherings.",
+      "Learn exactly how to play charades with our comprehensive guide. Includes official rules, expert tips, and 300+ curated charades words. Perfect for parties, team building, and family gatherings.",
   },
   breadcrumb: {
     home: "Home",
@@ -73,7 +73,7 @@ const en: Dictionary = {
         icon: "🎭",
         title: "Curated Word Library",
         description:
-          "150+ charades words across animals, movies, sports, food, and celebrities with three difficulty levels for all ages.",
+          "300+ charades words across animals, movies, sports, food, and celebrities with three difficulty levels for all ages.",
       },
       {
         icon: "⏱️",
@@ -195,6 +195,21 @@ const en: Dictionary = {
     copyright: "© 2026 How to Play Charades. All rights reserved.",
     description:
       "Free charades rules, tips, and online play for parties, team building, and family entertainment.",
+    guidesTitle: "Charades Guides",
+    guides: {
+      charadesForKids: "Charades for Kids",
+      charadesWords: "Charades Words List",
+      charadesParty: "Party Ideas",
+    },
+  },
+  cookie: {
+    message:
+      "We use cookies for analytics and advertising to improve your experience.",
+    accept: "Accept",
+    privacy: "Privacy Policy",
+  },
+  ad: {
+    label: "Advertisement",
   },
   blog: {
     date: "June 10, 2026",

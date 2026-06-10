@@ -7,11 +7,13 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HowToPlay } from "@/components/HowToPlay";
 import { JsonLd } from "@/components/JsonLd";
+import { AdUnit } from "@/components/AdUnit";
 import { ContentPreview } from "@/components/ContentPreview";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
 import { buildMetadata } from "@/lib/metadata";
-import { SITE_URL, WORD_COUNT } from "@/lib/site";
+import { SITE_URL } from "@/lib/site";
+import { WORD_COUNT } from "@/lib/word-database";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -97,6 +99,7 @@ export default async function HomePage({ params }: PageProps) {
             href={`/${locale}/tips`}
           />
           <Features dict={dict} />
+          <AdUnit label={dict.ad.label} />
           <CharadesGame locale={locale} dict={dict} />
         </div>
       </main>

@@ -8,6 +8,9 @@ const paths = [
   "/tips",
   "/user-statement",
   "/privacy-policy",
+  "/charades-for-kids",
+  "/charades-words",
+  "/charades-party-ideas",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -18,11 +21,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/${locale}${path}`,
       lastModified,
       changeFrequency: path === "" ? "weekly" : ("monthly" as const),
-      priority: path === "" ? 1 : path === "/blog" ? 0.8 : 0.7,
+      priority: path === "" ? 1 : path === "/blog" ? 0.8 : 0.75,
       alternates: {
-        languages: Object.fromEntries(
-          LOCALES.map((l) => [HREFLANG[l], `${SITE_URL}/${l}${path}`]),
-        ),
+        languages: {
+          "x-default": `${SITE_URL}/en${path}`,
+          ...Object.fromEntries(
+            LOCALES.map((l) => [HREFLANG[l], `${SITE_URL}/${l}${path}`]),
+          ),
+        },
       },
     })),
   );

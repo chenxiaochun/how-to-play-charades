@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { HowToPlay } from "@/components/HowToPlay";
 import { RulesList } from "@/components/RulesList";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
@@ -43,10 +42,7 @@ export default async function RulesPage({ params }: PageProps) {
             { label: dict.breadcrumb.rules },
           ]}
         />
-        <div className="space-y-8">
-          <HowToPlay dict={dict} />
-          <RulesList dict={dict} />
-        </div>
+        <RulesList dict={dict} />
       </main>
       <Footer locale={locale} dict={dict} />
     </>

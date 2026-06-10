@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { CookieConsent } from "@/components/CookieConsent";
 import { HtmlLang } from "@/components/HtmlLang";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
@@ -20,12 +21,19 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     notFound();
   }
 
-  getDictionary(locale as Locale);
+  const dict = getDictionary(locale as Locale);
 
   return (
     <>
       <HtmlLang locale={locale as Locale} />
       {children}
+      <CookieConsent
+        locale={locale}
+        message={dict.cookie.message}
+        acceptLabel={dict.cookie.accept}
+        privacyLabel={dict.cookie.privacy}
+        privacyHref={`/${locale}/privacy-policy`}
+      />
     </>
   );
 }

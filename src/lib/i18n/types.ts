@@ -82,6 +82,20 @@ export type Dictionary = {
   footer: {
     copyright: string;
     description: string;
+    guidesTitle: string;
+    guides: {
+      charadesForKids: string;
+      charadesWords: string;
+      charadesParty: string;
+    };
+  };
+  cookie: {
+    message: string;
+    accept: string;
+    privacy: string;
+  };
+  ad: {
+    label: string;
   };
   blog: {
     date: string;

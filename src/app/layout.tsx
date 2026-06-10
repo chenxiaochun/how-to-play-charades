@@ -10,11 +10,17 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-3519124760724427";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
+  },
+  other: {
+    "google-adsense-account": ADSENSE_CLIENT,
   },
 };
 

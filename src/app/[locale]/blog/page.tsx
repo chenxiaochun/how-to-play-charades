@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdUnit } from "@/components/AdUnit";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -74,6 +75,11 @@ export default async function BlogPage({ params }: PageProps) {
             <p className="font-semibold text-[#667eea]">{dict.blog.date}</p>
             <p className="text-gray-600">{dict.blog.author}</p>
           </header>
+
+          <AdUnit
+            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTICLE}
+            label={dict.ad.label}
+          />
 
           {dict.blog.sections.map((section) => (
             <section key={section.heading} className="mb-8">

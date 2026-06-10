@@ -5,7 +5,7 @@ const zh: Dictionary = {
     home: {
       title: "如何玩你比我猜 - 规则、技巧与免费在线游戏",
       description:
-        "学习你比我猜（Charades）的完整规则与技巧，免费在线游戏提供 150+ 精选词汇，适合聚会、团建和家庭娱乐。",
+        "学习你比我猜（Charades）的完整规则与技巧，免费在线游戏提供 300+ 精选词汇，适合聚会、团建和家庭娱乐。",
     },
     blog: {
       title: "在线免费猜词游戏：益处、策略与最佳实践",
@@ -48,7 +48,7 @@ const zh: Dictionary = {
   header: {
     title: "如何玩你比我猜游戏 - Charades 完整指南",
     subtitle:
-      "免费在线猜词游戏，150+ 精选词汇，适合聚会、团建和家庭娱乐。了解规则、技巧与玩法。",
+      "免费在线猜词游戏，300+ 精选词汇，适合聚会、团建和家庭娱乐。了解规则、技巧与玩法。",
   },
   breadcrumb: {
     home: "首页",
@@ -70,7 +70,7 @@ const zh: Dictionary = {
         icon: "🎭",
         title: "精选词汇库",
         description:
-          "150+ 你比我猜词汇，涵盖动物、电影、运动、食物、名人等类别，三种难度适合不同年龄。",
+          "300+ 你比我猜词汇，涵盖动物、电影、运动、食物、名人等类别，三种难度适合不同年龄。",
       },
       {
         icon: "⏱️",
@@ -182,6 +182,20 @@ const zh: Dictionary = {
     copyright: "© 2026 如何玩你比我猜游戏. 保留所有权利.",
     description:
       "免费提供你比我猜规则、技巧和在线体验，适合家庭聚会、团队建设和朋友娱乐。",
+    guidesTitle: "专题指南",
+    guides: {
+      charadesForKids: "儿童你比我猜",
+      charadesWords: "词汇大全",
+      charadesParty: "聚会创意",
+    },
+  },
+  cookie: {
+    message: "我们使用 Cookie 进行分析和广告投放，以改善您的浏览体验。",
+    accept: "接受",
+    privacy: "隐私政策",
+  },
+  ad: {
+    label: "广告",
   },
   blog: {
     date: "2026年6月10日",
