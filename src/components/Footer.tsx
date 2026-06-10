@@ -17,6 +17,7 @@ export function Footer({ locale, dict }: FooterProps) {
   ];
 
   const guides = [
+    { href: `/${locale}/guides`, label: dict.footer.guides.allGuides },
     {
       href: `/${locale}/charades-for-kids`,
       label: dict.footer.guides.charadesForKids,
@@ -28,6 +29,18 @@ export function Footer({ locale, dict }: FooterProps) {
     {
       href: `/${locale}/charades-party-ideas`,
       label: dict.footer.guides.charadesParty,
+    },
+    {
+      href: `/${locale}/charades-for-adults`,
+      label: dict.footer.guides.charadesForAdults,
+    },
+    {
+      href: `/${locale}/charades-themes`,
+      label: dict.footer.guides.charadesThemes,
+    },
+    {
+      href: `/${locale}/christmas-charades`,
+      label: dict.footer.guides.christmasCharades,
     },
   ];
 

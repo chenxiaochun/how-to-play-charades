@@ -10,6 +10,7 @@ type SiteNavProps = {
 export function SiteNav({ locale, dict }: SiteNavProps) {
   const links = [
     { href: `/${locale}`, label: dict.nav.home },
+    { href: `/${locale}/guides`, label: dict.nav.guides },
     { href: `/${locale}/rules`, label: dict.nav.rules },
     { href: `/${locale}/tips`, label: dict.nav.tips },
     { href: `/${locale}/blog`, label: dict.nav.blog },

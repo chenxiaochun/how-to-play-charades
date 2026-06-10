@@ -3,9 +3,11 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd } from "@/components/JsonLd";
 import { TipsList } from "@/components/TipsList";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
+import { buildItemListJsonLd, buildWebPageJsonLd } from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 
 type PageProps = {
@@ -31,17 +33,30 @@ export default async function TipsPage({ params }: PageProps) {
   if (!isValidLocale(locale)) notFound();
 
   const dict = getDictionary(locale);
+  const breadcrumbItems = [
+    { label: dict.breadcrumb.home, href: `/${locale}` },
+    { label: dict.breadcrumb.tips },
+  ];
+
+  const jsonLd = [
+    buildWebPageJsonLd({
+      locale,
+      title: dict.meta.tips.title,
+      description: dict.meta.tips.description,
+      path: "/tips",
+    }),
+    buildItemListJsonLd(dict.tips.title, dict.tips.items),
+  ];
 
   return (
     <>
-      <Header locale={locale} dict={dict} showActions={false} />
+      <JsonLd data={jsonLd} />
+      <Header locale={locale} dict={dict} variant="subpage" showActions={false} />
       <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8">
-        <Breadcrumb
-          items={[
-            { label: dict.breadcrumb.home, href: `/${locale}` },
-            { label: dict.breadcrumb.tips },
-          ]}
-        />
+        <Breadcrumb locale={locale} items={breadcrumbItems} />
+        <h1 className="mb-8 text-3xl font-bold text-[#2c3e50] md:text-4xl">
+          {dict.meta.tips.title}
+        </h1>
         <TipsList dict={dict} />
       </main>
       <Footer locale={locale} dict={dict} />

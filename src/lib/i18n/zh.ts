@@ -30,6 +30,11 @@ const zh: Dictionary = {
       description:
         "专业你比我猜技巧：类别提示、音节手势、时间管理与团队配合策略。",
     },
+    guides: {
+      title: "你比我猜指南 - 专题、词库与聚会创意",
+      description:
+        "浏览儿童、成人、聚会、主题、圣诞等专题指南与词库，附免费在线游戏。",
+    },
     notFound: {
       title: "页面未找到 - 你比我猜游戏",
       description: "您访问的页面不存在，请返回首页继续游戏或查看规则。",
@@ -38,6 +43,7 @@ const zh: Dictionary = {
   nav: {
     home: "首页",
     blog: "博客",
+    guides: "指南",
     rules: "规则",
     tips: "技巧",
     userStatement: "用户声明",
@@ -58,6 +64,16 @@ const zh: Dictionary = {
     charades: "你比我猜游戏",
     userStatement: "用户声明",
     privacyPolicy: "隐私政策",
+    guides: "指南",
+  },
+  guides: {
+    sectionTitle: "热门你比我猜指南",
+    sectionDescription:
+      "词库、聚会玩法、儿童版、成人版和节日主题等专题深度内容。",
+    viewAll: "查看全部指南",
+    hubTitle: "你比我猜指南与资源",
+    hubIntro:
+      "浏览各专题的规则、词汇与聚会创意，每篇指南都可直达免费在线游戏。",
   },
   homePreview: {
     readMoreRules: "查看完整规则",
@@ -187,6 +203,10 @@ const zh: Dictionary = {
       charadesForKids: "儿童你比我猜",
       charadesWords: "词汇大全",
       charadesParty: "聚会创意",
+      charadesForAdults: "成人你比我猜",
+      charadesThemes: "主题专场",
+      christmasCharades: "圣诞你比我猜",
+      allGuides: "全部指南",
     },
   },
   cookie: {

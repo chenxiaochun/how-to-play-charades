@@ -17,6 +17,11 @@ export function TopicPage({ locale, slug }: TopicPageProps) {
   const dict = getDictionary(locale);
   const topic = getTopic(locale, slug);
   const url = `${SITE_URL}/${locale}/${slug}`;
+  const breadcrumbItems = [
+    { label: dict.breadcrumb.home, href: `/${locale}` },
+    { label: dict.breadcrumb.guides, href: `/${locale}/guides` },
+    { label: topic.breadcrumb },
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -33,14 +38,9 @@ export function TopicPage({ locale, slug }: TopicPageProps) {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <Header locale={locale} dict={dict} showActions={false} />
+      <Header locale={locale} dict={dict} variant="subpage" showActions={false} />
       <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8">
-        <Breadcrumb
-          items={[
-            { label: dict.breadcrumb.home, href: `/${locale}` },
-            { label: topic.breadcrumb },
-          ]}
-        />
+        <Breadcrumb locale={locale} items={breadcrumbItems} />
         <article className="rounded-2xl bg-white p-6 shadow-lg md:p-10">
           <h1 className="mb-4 text-3xl font-bold text-[#2c3e50] md:text-4xl">
             {topic.heading}

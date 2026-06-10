@@ -59,9 +59,10 @@ export default async function BlogPage({ params }: PageProps) {
   return (
     <>
       <JsonLd data={blogJsonLd} />
-      <Header locale={locale} dict={dict} showActions={false} />
+      <Header locale={locale} dict={dict} variant="subpage" showActions={false} />
       <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8">
         <Breadcrumb
+          locale={locale}
           items={[
             { label: dict.breadcrumb.home, href: `/${locale}` },
             { label: dict.breadcrumb.blog },

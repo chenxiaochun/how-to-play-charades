@@ -9,6 +9,7 @@ import { HowToPlay } from "@/components/HowToPlay";
 import { JsonLd } from "@/components/JsonLd";
 import { AdUnit } from "@/components/AdUnit";
 import { ContentPreview } from "@/components/ContentPreview";
+import { GuideCards } from "@/components/GuideCards";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
 import { buildMetadata } from "@/lib/metadata";
@@ -79,6 +80,7 @@ export default async function HomePage({ params }: PageProps) {
       <Header locale={locale} dict={dict} />
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
         <Breadcrumb
+          locale={locale}
           items={[
             { label: dict.breadcrumb.home, href: `/${locale}` },
             { label: dict.breadcrumb.charades },
@@ -99,6 +101,7 @@ export default async function HomePage({ params }: PageProps) {
             href={`/${locale}/tips`}
           />
           <Features dict={dict} />
+          <GuideCards locale={locale} dict={dict} />
           <AdUnit label={dict.ad.label} />
           <CharadesGame locale={locale} dict={dict} />
         </div>

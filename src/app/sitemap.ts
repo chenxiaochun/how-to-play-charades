@@ -6,11 +6,15 @@ const paths = [
   "/blog",
   "/rules",
   "/tips",
+  "/guides",
   "/user-statement",
   "/privacy-policy",
   "/charades-for-kids",
   "/charades-words",
   "/charades-party-ideas",
+  "/charades-for-adults",
+  "/charades-themes",
+  "/christmas-charades",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

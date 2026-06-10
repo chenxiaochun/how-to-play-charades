@@ -8,11 +8,13 @@ export type Dictionary = {
     privacyPolicy: { title: string; description: string };
     rules: { title: string; description: string };
     tips: { title: string; description: string };
+    guides: { title: string; description: string };
     notFound: { title: string; description: string };
   };
   nav: {
     home: string;
     blog: string;
+    guides: string;
     rules: string;
     tips: string;
     userStatement: string;
@@ -32,6 +34,14 @@ export type Dictionary = {
     charades: string;
     userStatement: string;
     privacyPolicy: string;
+    guides: string;
+  };
+  guides: {
+    sectionTitle: string;
+    sectionDescription: string;
+    viewAll: string;
+    hubTitle: string;
+    hubIntro: string;
   };
   homePreview: {
     readMoreRules: string;
@@ -87,6 +97,10 @@ export type Dictionary = {
       charadesForKids: string;
       charadesWords: string;
       charadesParty: string;
+      charadesForAdults: string;
+      charadesThemes: string;
+      christmasCharades: string;
+      allGuides: string;
     };
   };
   cookie: {

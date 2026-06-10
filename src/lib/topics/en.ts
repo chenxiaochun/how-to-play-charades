@@ -144,6 +144,151 @@ const en: TopicMap = {
     ],
     cta: "Start a Free Charades Party Game",
   },
+  "charades-for-adults": {
+    meta: {
+      title: "Charades for Adults - Hard Words, Party Rules & Team Ideas",
+      description:
+        "Adult charades word lists, spicier party rules, and team formats for dinner parties, office events, and game nights with friends.",
+    },
+    breadcrumb: "Charades for Adults",
+    heading: "Charades for Adults: Challenging Words & Party Formats",
+    intro:
+      "Adult charades raises the difficulty with abstract phrases, pop culture references, and fast-paced team play. Use these ideas for dinner parties, holiday gatherings, or office happy hours.",
+    sections: [
+      {
+        heading: "What Makes Adult Charades Different",
+        paragraphs: [
+          "Longer phrases, idioms, and niche references make rounds more challenging and funnier.",
+          "Teams often use shorter timers (45–60 seconds) and allow themed rounds like movies, brands, or decade trivia.",
+        ],
+      },
+      {
+        heading: "Hard Charades Words for Adults",
+        list: [
+          "Phrases: break the ice, once in a blue moon, caught red-handed",
+          "Movies: Pulp Fiction, Parasite, The Prestige, Memento",
+          "Jobs & life: job interview, tax season, group chat drama",
+          "Pop culture: viral meme, streaming binge, coffee run",
+        ],
+      },
+      {
+        heading: "Party Formats Adults Enjoy",
+        list: [
+          "Reverse charades: the team acts while one person guesses.",
+          "Villain round: only antagonists from films and books.",
+          "No-hands round: facial expressions and body angles only.",
+          "Speed bracket: elimination tournament between pairs.",
+        ],
+      },
+      {
+        heading: "Hosting Tips",
+        list: [
+          "Curate words ahead of time—avoid anything offensive or too obscure.",
+          "Pair shy guests with confident actors for the first round.",
+          "Keep alcohol-friendly rules clear: no speaking, no phone hints.",
+          "Use our online timer and 300+ word library to run rounds smoothly.",
+        ],
+      },
+    ],
+    cta: "Play Adult Charades Online",
+  },
+  "charades-themes": {
+    meta: {
+      title: "Charades Themes - Movie, Holiday & Category Night Ideas",
+      description:
+        "Plan themed charades nights with curated word lists for movies, animals, holidays, decades, and TV shows. Easy setup for any group size.",
+    },
+    breadcrumb: "Charades Themes",
+    heading: "Charades Themes for Memorable Game Nights",
+    intro:
+      "Themed rounds keep charades fresh. Pick one theme per night or rotate categories between rounds so every player gets words they enjoy.",
+    sections: [
+      {
+        heading: "Popular Theme Ideas",
+        list: [
+          "Hollywood night: films, actors, famous quotes",
+          "Animal kingdom: pets, wildlife, mythical creatures",
+          "Sports mania: athletes, equipment, stadium moments",
+          "Food tour: dishes, cooking actions, restaurant scenes",
+          "Decade throwback: 80s, 90s, or 2000s pop culture",
+        ],
+      },
+      {
+        heading: "Holiday & Seasonal Themes",
+        list: [
+          "Halloween: monsters, costumes, trick-or-treat",
+          "Thanksgiving: family dinner, parade, gratitude",
+          "Summer BBQ: grill, beach, vacation",
+          "New Year's Eve: countdown, fireworks, resolutions",
+        ],
+      },
+      {
+        heading: "How to Run a Theme Round",
+        paragraphs: [
+          "Announce the theme before each round so guessers know which category to expect.",
+          "Mix easy and hard words within the theme so beginners and experts both stay engaged.",
+          "Award bonus points for the best themed performance, not just the fastest guess.",
+        ],
+      },
+      {
+        heading: "Build a Theme Pack Fast",
+        list: [
+          "Filter by category in our free online charades game.",
+          "Print or share a short list of 20–30 words per theme.",
+          "Rotate themes every 15 minutes to keep energy high.",
+        ],
+      },
+    ],
+    cta: "Start a Themed Charades Game",
+  },
+  "christmas-charades": {
+    meta: {
+      title: "Christmas Charades - Holiday Words, Rules & Family Ideas",
+      description:
+        "Christmas charades word lists and family-friendly rules for holiday parties. Festive ideas for kids, adults, and mixed-age groups.",
+    },
+    breadcrumb: "Christmas Charades",
+    heading: "Christmas Charades: Festive Words for Holiday Parties",
+    intro:
+      "Christmas charades is a perfect low-prep activity for family gatherings and office holiday parties. Use these festive words and simple rule tweaks for all ages.",
+    sections: [
+      {
+        heading: "Christmas Charades Word Ideas",
+        list: [
+          "Santa Claus, reindeer, elf, snowman, gingerbread house",
+          "Decorating the tree, wrapping gifts, caroling, baking cookies",
+          "North Pole, sleigh, chimney, stockings, mistletoe",
+          "Frosty the Snowman, Grinch, Nutcracker, Ebenezer Scrooge",
+          "Hot cocoa, candy cane, eggnog, fruitcake, turkey dinner",
+        ],
+      },
+      {
+        heading: "Family-Friendly Rules",
+        list: [
+          "Use easy words for kids and harder holiday phrases for adults.",
+          "Allow 90-second rounds when younger children act.",
+          "Teams can be mixed ages—pair kids with adults.",
+          "Skip scary or complex words if the group prefers lighthearted fun.",
+        ],
+      },
+      {
+        heading: "Holiday Party Formats",
+        list: [
+          "Stocking surprise: each team draws words from a festive hat.",
+          "Ornament relay: fastest correct guess hangs an ornament on the tree.",
+          "Carol charades: act a song title without humming lyrics.",
+        ],
+      },
+      {
+        heading: "Make It Extra Festive",
+        paragraphs: [
+          "Play in front of the tree, wear ugly sweaters, or add small prizes for best holiday acting.",
+          "Combine with our free online charades game—filter easy words and use the built-in timer.",
+        ],
+      },
+    ],
+    cta: "Play Christmas Charades Online",
+  },
 };
 
 export default en;

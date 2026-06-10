@@ -1,15 +1,24 @@
+import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n/types";
-import type { Locale } from "@/lib/site";
+import { SITE_NAME, type Locale } from "@/lib/site";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { SiteNav } from "./SiteNav";
 
 type HeaderProps = {
   locale: Locale;
   dict: Dictionary;
+  variant?: "home" | "subpage";
   showActions?: boolean;
 };
 
-export function Header({ locale, dict, showActions = true }: HeaderProps) {
+export function Header({
+  locale,
+  dict,
+  variant = "home",
+  showActions = true,
+}: HeaderProps) {
+  const isHome = variant === "home";
+
   return (
     <header className="relative overflow-hidden bg-gradient-to-br from-[#667eea] to-[#764ba2] text-center text-white">
       <div className="relative px-4 py-10">
@@ -17,18 +26,30 @@ export function Header({ locale, dict, showActions = true }: HeaderProps) {
           <LanguageSwitcher locale={locale} />
         </div>
         <div className="relative z-10 mx-auto max-w-3xl">
-        <h1 className="mb-4 text-3xl font-bold md:text-5xl">{dict.header.title}</h1>
-        <p className="mb-8 text-base md:text-lg">{dict.header.subtitle}</p>
-        {showActions && (
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a href="#game" className="btn-primary">
-              {dict.nav.playNow}
-            </a>
-            <a href={`/${locale}/rules`} className="btn-secondary">
-              {dict.nav.viewRules}
-            </a>
-          </div>
-        )}
+          {isHome ? (
+            <>
+              <h1 className="mb-4 text-3xl font-bold md:text-5xl">
+                {dict.header.title}
+              </h1>
+              <p className="mb-8 text-base md:text-lg">{dict.header.subtitle}</p>
+              {showActions && (
+                <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                  <a href="#game" className="btn-primary">
+                    {dict.nav.playNow}
+                  </a>
+                  <a href={`/${locale}/rules`} className="btn-secondary">
+                    {dict.nav.viewRules}
+                  </a>
+                </div>
+              )}
+            </>
+          ) : (
+            <p className="text-lg font-semibold md:text-xl">
+              <Link href={`/${locale}`} className="hover:underline">
+                {SITE_NAME}
+              </Link>
+            </p>
+          )}
         </div>
       </div>
       <SiteNav locale={locale} dict={dict} />

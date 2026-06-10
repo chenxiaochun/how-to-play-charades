@@ -32,6 +32,11 @@ const en: Dictionary = {
       description:
         "Expert charades tips for actors and guessers: category signals, syllable hints, timing, and team communication strategies.",
     },
+    guides: {
+      title: "Charades Guides - Topics, Word Lists & Party Ideas",
+      description:
+        "Browse charades guides for kids, adults, parties, themes, Christmas, and word lists. Free tips and online play.",
+    },
     notFound: {
       title: "Page Not Found - Charades Game",
       description:
@@ -41,6 +46,7 @@ const en: Dictionary = {
   nav: {
     home: "Home",
     blog: "Blog",
+    guides: "Guides",
     rules: "Rules",
     tips: "Tips",
     userStatement: "User Statement",
@@ -61,6 +67,16 @@ const en: Dictionary = {
     charades: "Charades Game",
     userStatement: "User Statement",
     privacyPolicy: "Privacy Policy",
+    guides: "Guides",
+  },
+  guides: {
+    sectionTitle: "Popular Charades Guides",
+    sectionDescription:
+      "Deep dives on word lists, party formats, kids games, adult nights, and holiday themes.",
+    viewAll: "View all charades guides",
+    hubTitle: "Charades Guides & Resources",
+    hubIntro:
+      "Explore topic guides with rules, word ideas, and party formats. Each guide links to our free online charades game.",
   },
   homePreview: {
     readMoreRules: "Read all charades rules",
@@ -200,6 +216,10 @@ const en: Dictionary = {
       charadesForKids: "Charades for Kids",
       charadesWords: "Charades Words List",
       charadesParty: "Party Ideas",
+      charadesForAdults: "Charades for Adults",
+      charadesThemes: "Charades Themes",
+      christmasCharades: "Christmas Charades",
+      allGuides: "All Guides",
     },
   },
   cookie: {

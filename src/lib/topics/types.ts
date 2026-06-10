@@ -2,6 +2,9 @@ export const TOPIC_SLUGS = [
   "charades-for-kids",
   "charades-words",
   "charades-party-ideas",
+  "charades-for-adults",
+  "charades-themes",
+  "christmas-charades",
 ] as const;
 
 export type TopicSlug = (typeof TOPIC_SLUGS)[number];
