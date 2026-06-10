@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f9fa;
+  --foreground: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.btn-primary {
+  @apply inline-block rounded-full bg-[#ff5e62] px-8 py-3 text-center font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#ff4a4e] hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply inline-block rounded-full bg-[#4ecdc4] px-8 py-3 text-center font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#3db5ad] hover:shadow-lg;
+}

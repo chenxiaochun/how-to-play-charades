@@ -1,0 +1,37 @@
+import Link from "next/link";
+import type { Dictionary } from "@/lib/i18n/types";
+import type { Locale } from "@/lib/site";
+
+type FooterProps = {
+  locale: Locale;
+  dict: Dictionary;
+};
+
+export function Footer({ locale, dict }: FooterProps) {
+  const links = [
+    { href: `/${locale}/blog`, label: dict.nav.blog },
+    { href: `/${locale}/rules`, label: dict.nav.rules },
+    { href: `/${locale}/tips`, label: dict.nav.tips },
+    { href: `/${locale}/user-statement`, label: dict.nav.userStatement },
+  ];
+
+  return (
+    <footer className="mt-16 border-t border-gray-200 bg-[#2c3e50] px-4 py-8 text-center text-white">
+      <p className="mb-2">{dict.footer.copyright}</p>
+      <p className="mx-auto mb-4 max-w-2xl text-sm text-white/80">
+        {dict.footer.description}
+      </p>
+      <nav className="flex flex-wrap justify-center gap-4 text-sm">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="text-[#a5b4fc] transition hover:text-white"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </nav>
+    </footer>
+  );
+}
