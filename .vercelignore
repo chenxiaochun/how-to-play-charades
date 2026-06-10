@@ -1,0 +1,6 @@
+# Local marketing assets (Pinterest pins, outreach scripts) — not used at runtime
+marketing/
+
+# Playwright / automation leftovers (gitignored locally, belt-and-suspenders)
+**/.pinterest-profile/
+marketing/pins/node_modules/
