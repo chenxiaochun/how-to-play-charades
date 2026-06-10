@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { HtmlLang } from "@/components/HtmlLang";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
 import { LOCALES, type Locale } from "@/lib/site";
@@ -21,5 +22,10 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   getDictionary(locale as Locale);
 
-  return <div lang={locale}>{children}</div>;
+  return (
+    <>
+      <HtmlLang locale={locale as Locale} />
+      {children}
+    </>
+  );
 }

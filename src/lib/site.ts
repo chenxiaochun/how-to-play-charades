@@ -13,5 +13,17 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   zh: "中文",
 };
 
+export const HREFLANG: Record<Locale, string> = {
+  en: "en-US",
+  zh: "zh-CN",
+};
+
+export const HTML_LANG: Record<Locale, string> = {
+  en: "en-US",
+  zh: "zh-CN",
+};
+
+export const PREFERRED_LOCALE_COOKIE = "preferred-locale";
+
 /** Curated word count per language (5 categories × 3 difficulties × 10 words). */
 export const WORD_COUNT = 150;

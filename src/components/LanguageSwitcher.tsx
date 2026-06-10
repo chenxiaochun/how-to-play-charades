@@ -2,11 +2,20 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LOCALE_LABELS, type Locale } from "@/lib/site";
+import {
+  HREFLANG,
+  LOCALE_LABELS,
+  PREFERRED_LOCALE_COOKIE,
+  type Locale,
+} from "@/lib/site";
 
 type LanguageSwitcherProps = {
   locale: Locale;
 };
+
+function setLocalePreference(lang: Locale) {
+  document.cookie = `${PREFERRED_LOCALE_COOKIE}=${lang};path=/;max-age=31536000;SameSite=Lax`;
+}
 
 export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
   const pathname = usePathname();
@@ -18,12 +27,11 @@ export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
         <Link
           key={lang}
           href={`/${lang}${rest}`}
+          onClick={() => setLocalePreference(lang)}
           className={`rounded-full px-4 py-2 text-sm font-bold transition ${
-            locale === lang
-              ? "bg-white/30 shadow-sm"
-              : "hover:bg-white/20"
+            locale === lang ? "bg-white/30 shadow-sm" : "hover:bg-white/20"
           }`}
-          hrefLang={lang}
+          hrefLang={HREFLANG[lang]}
         >
           {LOCALE_LABELS[lang]}
         </Link>

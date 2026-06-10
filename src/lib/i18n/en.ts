@@ -17,6 +17,11 @@ const en: Dictionary = {
       description:
         "User statement and terms of service for the How to Play Charades website.",
     },
+    privacyPolicy: {
+      title: "Privacy Policy - How to Play Charades",
+      description:
+        "Learn how How to Play Charades collects, uses, and protects your data, including analytics and cookies.",
+    },
     rules: {
       title: "Charades Rules - Official Game Rules Explained",
       description:
@@ -39,6 +44,7 @@ const en: Dictionary = {
     rules: "Rules",
     tips: "Tips",
     userStatement: "User Statement",
+    privacyPolicy: "Privacy Policy",
     playNow: "Play Charades Free",
     viewRules: "View Rules & Tips",
   },
@@ -54,6 +60,11 @@ const en: Dictionary = {
     tips: "Tips",
     charades: "Charades Game",
     userStatement: "User Statement",
+    privacyPolicy: "Privacy Policy",
+  },
+  homePreview: {
+    readMoreRules: "Read all charades rules",
+    readMoreTips: "Read all charades tips",
   },
   features: {
     title: "Charades Game Features",
@@ -174,6 +185,7 @@ const en: Dictionary = {
     endGame: "End Game",
     correct: "Correct",
     wrong: "Wrong",
+    skip: "Skip",
     backToMenu: "Back to Menu",
     gameEnded: "Round ended",
     correctStatus: "Correct ✓",
@@ -185,7 +197,7 @@ const en: Dictionary = {
       "Free charades rules, tips, and online play for parties, team building, and family entertainment.",
   },
   blog: {
-    date: "May 15, 2024",
+    date: "June 10, 2026",
     author: "Charades Game Team",
     sections: [
       {
@@ -339,6 +351,76 @@ const en: Dictionary = {
         heading: "Governing Law",
         paragraphs: [
           "This statement is governed by the laws of the jurisdiction in which the Service is operated.",
+        ],
+      },
+    ],
+    backHome: "Back to Home",
+    lastUpdated: "Last updated: June 2026",
+  },
+  privacyPolicy: {
+    sections: [
+      {
+        heading: "Overview",
+        paragraphs: [
+          "This Privacy Policy explains how How to Play Charades (\"we\", \"us\") handles information when you visit our website and use our free online charades game.",
+        ],
+      },
+      {
+        heading: "Information We Collect",
+        paragraphs: ["We may collect the following types of information:"],
+        list: [
+          "Usage data such as pages visited, browser type, device type, and approximate location (via analytics)",
+          "Cookies and similar technologies used by analytics and advertising partners",
+          "Non-personal technical logs required to operate and secure the website",
+        ],
+      },
+      {
+        heading: "How We Use Information",
+        paragraphs: ["We use collected information to:"],
+        list: [
+          "Measure traffic and improve website performance",
+          "Understand which content is most helpful to visitors",
+          "Display and measure advertisements (if enabled)",
+          "Maintain security and prevent abuse",
+        ],
+      },
+      {
+        heading: "Third-Party Services",
+        paragraphs: [
+          "We use Google Analytics to understand site usage. Google may process data according to its own privacy policy.",
+          "We may use Google AdSense to display ads. Ad partners may use cookies to serve personalized or contextual ads.",
+          "These third parties have their own privacy practices, which we do not control.",
+        ],
+      },
+      {
+        heading: "Cookies",
+        paragraphs: [
+          "Cookies are small files stored on your device. You can control cookies through your browser settings. Disabling cookies may affect some site features.",
+        ],
+      },
+      {
+        heading: "Data Retention",
+        paragraphs: [
+          "Analytics and server logs are retained only as long as needed for measurement, security, and legal compliance.",
+          "We do not knowingly collect personal information unless you voluntarily provide it (for example, by contacting us).",
+        ],
+      },
+      {
+        heading: "Your Rights",
+        paragraphs: [
+          "Depending on your location, you may have rights to access, correct, or delete personal data. Contact us if you wish to exercise these rights.",
+        ],
+      },
+      {
+        heading: "Children's Privacy",
+        paragraphs: [
+          "Our game is family-friendly, but we do not knowingly collect personal information from children under 13.",
+        ],
+      },
+      {
+        heading: "Changes",
+        paragraphs: [
+          "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.",
         ],
       },
     ],

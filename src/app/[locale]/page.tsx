@@ -7,8 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HowToPlay } from "@/components/HowToPlay";
 import { JsonLd } from "@/components/JsonLd";
-import { RulesList } from "@/components/RulesList";
-import { TipsList } from "@/components/TipsList";
+import { ContentPreview } from "@/components/ContentPreview";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
 import { buildMetadata } from "@/lib/metadata";
@@ -85,8 +84,18 @@ export default async function HomePage({ params }: PageProps) {
         />
         <div className="space-y-12">
           <HowToPlay dict={dict} />
-          <RulesList dict={dict} />
-          <TipsList dict={dict} />
+          <ContentPreview
+            title={dict.rules.title}
+            items={dict.rules.items}
+            readMoreLabel={dict.homePreview.readMoreRules}
+            href={`/${locale}/rules`}
+          />
+          <ContentPreview
+            title={dict.tips.title}
+            items={dict.tips.items}
+            readMoreLabel={dict.homePreview.readMoreTips}
+            href={`/${locale}/tips`}
+          />
           <Features dict={dict} />
           <CharadesGame locale={locale} dict={dict} />
         </div>

@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { SITE_NAME, SITE_URL, type Locale } from "@/lib/site";
+import { HREFLANG, LOCALES, SITE_URL, type Locale } from "@/lib/site";
 
-type PageKey = "home" | "blog" | "userStatement" | "rules" | "tips" | "notFound";
+type PageKey =
+  | "home"
+  | "blog"
+  | "userStatement"
+  | "privacyPolicy"
+  | "rules"
+  | "tips"
+  | "notFound";
 
 export function buildMetadata({
   locale,
@@ -20,13 +27,14 @@ export function buildMetadata({
 }): Metadata {
   const canonical = `${SITE_URL}/${locale}${path}`;
   const languages: Record<string, string> = {
-    en: `${SITE_URL}/en${path}`,
-    zh: `${SITE_URL}/zh${path}`,
     "x-default": `${SITE_URL}/en${path}`,
   };
+  for (const l of LOCALES) {
+    languages[HREFLANG[l]] = `${SITE_URL}/${l}${path}`;
+  }
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical,
@@ -36,10 +44,17 @@ export function buildMetadata({
       title,
       description,
       url: canonical,
-      siteName: SITE_NAME,
+      siteName: "How to Play Charades",
       locale: locale === "zh" ? "zh_CN" : "en_US",
       type,
-      images: [{ url: `${SITE_URL}/opengraph-image`, width: 1200, height: 630, alt: title }],
+      images: [
+        {
+          url: `${SITE_URL}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",

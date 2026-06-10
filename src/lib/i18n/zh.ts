@@ -16,6 +16,10 @@ const zh: Dictionary = {
       title: "用户声明 - 你比我猜游戏",
       description: "How to Play Charades 网站的用户声明与服务条款。",
     },
+    privacyPolicy: {
+      title: "隐私政策 - 如何玩你比我猜",
+      description: "了解本站如何收集、使用和保护您的数据，包括分析与 Cookie 说明。",
+    },
     rules: {
       title: "你比我猜规则 - 官方游戏规则详解",
       description:
@@ -37,6 +41,7 @@ const zh: Dictionary = {
     rules: "规则",
     tips: "技巧",
     userStatement: "用户声明",
+    privacyPolicy: "隐私政策",
     playNow: "免费玩你比我猜",
     viewRules: "查看规则与技巧",
   },
@@ -52,6 +57,11 @@ const zh: Dictionary = {
     tips: "技巧",
     charades: "你比我猜游戏",
     userStatement: "用户声明",
+    privacyPolicy: "隐私政策",
+  },
+  homePreview: {
+    readMoreRules: "查看完整规则",
+    readMoreTips: "查看全部技巧",
   },
   features: {
     title: "你比我猜游戏特色",
@@ -162,6 +172,7 @@ const zh: Dictionary = {
     endGame: "结束游戏",
     correct: "正确",
     wrong: "错误",
+    skip: "跳过",
     backToMenu: "返回菜单",
     gameEnded: "本轮结束",
     correctStatus: "正确 ✓",
@@ -173,7 +184,7 @@ const zh: Dictionary = {
       "免费提供你比我猜规则、技巧和在线体验，适合家庭聚会、团队建设和朋友娱乐。",
   },
   blog: {
-    date: "2024年5月15日",
+    date: "2026年6月10日",
     author: "Charades Game Team",
     sections: [
       {
@@ -311,6 +322,76 @@ const zh: Dictionary = {
       {
         heading: "适用法律",
         paragraphs: ["本声明受本服务运营所在司法管辖区的法律管辖。"],
+      },
+    ],
+    backHome: "返回首页",
+    lastUpdated: "最后更新：2026年6月",
+  },
+  privacyPolicy: {
+    sections: [
+      {
+        heading: "概述",
+        paragraphs: [
+          "本隐私政策说明 How to Play Charades（以下简称「我们」）在您访问网站和使用免费在线你比我猜游戏时如何处理信息。",
+        ],
+      },
+      {
+        heading: "我们收集的信息",
+        paragraphs: ["我们可能收集以下类型的信息："],
+        list: [
+          "使用数据，如访问页面、浏览器类型、设备类型及大致地区（通过分析工具）",
+          "Cookie 及类似技术（分析工具与广告合作伙伴可能使用）",
+          "用于运营和保障网站安全的非个人技术日志",
+        ],
+      },
+      {
+        heading: "信息用途",
+        paragraphs: ["我们使用所收集的信息用于："],
+        list: [
+          "统计流量并改进网站性能",
+          "了解哪些内容对用户更有帮助",
+          "展示和衡量广告（如已启用）",
+          "维护安全并防止滥用",
+        ],
+      },
+      {
+        heading: "第三方服务",
+        paragraphs: [
+          "我们使用 Google Analytics 了解网站使用情况，Google 将按其隐私政策处理相关数据。",
+          "我们可能使用 Google AdSense 展示广告，广告合作伙伴可能使用 Cookie 提供个性化或上下文广告。",
+          "这些第三方有各自的隐私实践，我们无法控制。",
+        ],
+      },
+      {
+        heading: "Cookie",
+        paragraphs: [
+          "Cookie 是存储在您设备上的小型文件。您可通过浏览器设置管理 Cookie，禁用后部分功能可能受影响。",
+        ],
+      },
+      {
+        heading: "数据保留",
+        paragraphs: [
+          "分析与服务器日志仅在统计、安全及合规所需期限内保留。",
+          "除非您主动提供（例如联系我们），我们不会故意收集个人身份信息。",
+        ],
+      },
+      {
+        heading: "您的权利",
+        paragraphs: [
+          "根据您所在地区，您可能享有访问、更正或删除个人数据的权利。如需行使，请联系我们。",
+        ],
+      },
+      {
+        heading: "儿童隐私",
+        paragraphs: [
+          "本站游戏适合家庭娱乐，但我们不会故意收集 13 岁以下儿童的个人信息。",
+        ],
+      },
+      {
+        heading: "政策变更",
+        paragraphs: [
+          "我们可能不时更新本隐私政策，变更将发布在本页并更新日期。",
+        ],
       },
     ],
     backHome: "返回首页",

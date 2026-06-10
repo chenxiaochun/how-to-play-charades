@@ -13,6 +13,7 @@ export function Footer({ locale, dict }: FooterProps) {
     { href: `/${locale}/rules`, label: dict.nav.rules },
     { href: `/${locale}/tips`, label: dict.nav.tips },
     { href: `/${locale}/user-statement`, label: dict.nav.userStatement },
+    { href: `/${locale}/privacy-policy`, label: dict.nav.privacyPolicy },
   ];
 
   return (

@@ -57,20 +57,41 @@ export const wordDatabase: WordDatabase = {
   },
 };
 
+function getWordPool(
+  locale: Locale,
+  category: Category | "all",
+  difficulty: Difficulty,
+): string[] {
+  if (category === "all") {
+    return Object.values(wordDatabase[locale][difficulty]).flat();
+  }
+  return wordDatabase[locale][difficulty][category];
+}
+
 export function getRandomWord(
   locale: Locale,
   category: Category | "all",
   difficulty: Difficulty,
 ): string {
-  let words: string[] = [];
+  const words = getWordPool(locale, category, difficulty);
+  return words[Math.floor(Math.random() * words.length)];
+}
 
-  if (category === "all") {
-    Object.values(wordDatabase[locale][difficulty]).forEach((cat) => {
-      words = words.concat(cat);
-    });
-  } else {
-    words = wordDatabase[locale][difficulty][category];
+export function getUniqueRandomWord(
+  locale: Locale,
+  category: Category | "all",
+  difficulty: Difficulty,
+  usedWords: Set<string>,
+): string {
+  const pool = getWordPool(locale, category, difficulty);
+  let available = pool.filter((word) => !usedWords.has(word));
+
+  if (available.length === 0) {
+    usedWords.clear();
+    available = pool;
   }
 
-  return words[Math.floor(Math.random() * words.length)];
+  const word = available[Math.floor(Math.random() * available.length)];
+  usedWords.add(word);
+  return word;
 }

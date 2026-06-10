@@ -5,6 +5,7 @@ export type Dictionary = {
     home: { title: string; description: string };
     blog: { title: string; description: string };
     userStatement: { title: string; description: string };
+    privacyPolicy: { title: string; description: string };
     rules: { title: string; description: string };
     tips: { title: string; description: string };
     notFound: { title: string; description: string };
@@ -15,6 +16,7 @@ export type Dictionary = {
     rules: string;
     tips: string;
     userStatement: string;
+    privacyPolicy: string;
     playNow: string;
     viewRules: string;
   };
@@ -29,6 +31,11 @@ export type Dictionary = {
     tips: string;
     charades: string;
     userStatement: string;
+    privacyPolicy: string;
+  };
+  homePreview: {
+    readMoreRules: string;
+    readMoreTips: string;
   };
   features: {
     title: string;
@@ -66,6 +73,7 @@ export type Dictionary = {
     endGame: string;
     correct: string;
     wrong: string;
+    skip: string;
     backToMenu: string;
     gameEnded: string;
     correctStatus: string;
@@ -89,6 +97,11 @@ export type Dictionary = {
     cta: string;
   };
   userStatement: {
+    sections: Array<{ heading: string; paragraphs: string[]; list?: string[] }>;
+    backHome: string;
+    lastUpdated: string;
+  };
+  privacyPolicy: {
     sections: Array<{ heading: string; paragraphs: string[]; list?: string[] }>;
     backHome: string;
     lastUpdated: string;

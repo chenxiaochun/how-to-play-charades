@@ -1,6 +1,21 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { DEFAULT_LOCALE, LOCALES } from "@/lib/site";
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  PREFERRED_LOCALE_COOKIE,
+  type Locale,
+} from "@/lib/site";
+
+function resolveLocale(request: NextRequest): Locale {
+  const cookie = request.cookies.get(PREFERRED_LOCALE_COOKIE)?.value;
+  if (cookie === "en" || cookie === "zh") return cookie;
+
+  const accept = request.headers.get("accept-language") ?? "";
+  if (/\bzh(-|_|$)/i.test(accept)) return "zh";
+
+  return DEFAULT_LOCALE;
+}
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -19,7 +34,8 @@ export function proxy(request: NextRequest) {
 
   if (!hasLocale) {
     const url = request.nextUrl.clone();
-    url.pathname = `/${DEFAULT_LOCALE}${pathname === "/" ? "" : pathname}`;
+    const locale = resolveLocale(request);
+    url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
     return NextResponse.redirect(url);
   }
 
@@ -28,6 +44,6 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|opengraph-image|icon|ads.txt|robots.txt|sitemap.xml).*)",
+    "/((?!_next/static|_next/image|favicon.ico|opengraph-image|icon|apple-icon|ads.txt|robots.txt|sitemap.xml).*)",
   ],
 };

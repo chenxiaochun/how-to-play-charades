@@ -41,8 +41,8 @@ export default async function BlogPage({ params }: PageProps) {
     "@type": "BlogPosting",
     headline: dict.meta.blog.title,
     description: dict.meta.blog.description,
-    datePublished: "2024-05-15",
-    dateModified: "2024-05-15",
+    datePublished: "2026-06-10",
+    dateModified: "2026-06-10",
     author: { "@type": "Organization", name: dict.blog.author },
     publisher: {
       "@type": "Organization",
