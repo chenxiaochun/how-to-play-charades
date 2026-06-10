@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# marketing automation artifacts
+marketing/pins/node_modules/
+marketing/pins/.pinterest-profile/
+marketing/pins/*-log.txt
+marketing/pins/debug-*
+marketing/pins/screen-*.png
+marketing/pins/verify-*.png
+marketing/pins/drafts-check.png
+marketing/pins/post-via-ui.applescript
