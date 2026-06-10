@@ -30,7 +30,7 @@ const en: Dictionary = {
     rules: {
       title: "Charades Rules - Official Game Rules Explained",
       description:
-        "Learn the official charades rules including what players can and cannot do, scoring basics, and how to run a fair round.",
+        "Learn official charades rules—including whether props are allowed—plus scoring basics and how to run a fair round.",
     },
     tips: {
       title: "Charades Tips - Strategies to Win & Entertain",
@@ -181,6 +181,23 @@ const en: Dictionary = {
       "Be respectful and encourage all players to keep the game fun.",
       "Pick age-appropriate words, especially when children are playing.",
       "Skip a word if you cannot act it out fairly.",
+    ],
+    faq: [
+      {
+        question: "Can You Use Props in Charades?",
+        answer:
+          "No. In standard charades rules, physical props are not allowed. The actor may only use their body, face, and hands—no objects, costumes, drawings, or pointing at items in the room. This keeps the game fair and forces creative mime. Some groups use relaxed house rules for kids or themed parties; if so, agree before you start.",
+      },
+      {
+        question: "Can you point at things in the room?",
+        answer:
+          "No. Pointing at or touching real objects counts as using props. You must mime the idea entirely—for example, pretend to hold a phone instead of picking one up.",
+      },
+      {
+        question: "What can you use instead of props?",
+        answer:
+          "Use classic charades gestures: hold up fingers for word count or syllables, tug your ear for “sounds like,” or frame your hands to show a short word vs. a long phrase. Facial expressions and clear body mime work better than any object.",
+      },
     ],
   },
   tips: {

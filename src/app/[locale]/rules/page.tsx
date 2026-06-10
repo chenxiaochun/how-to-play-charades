@@ -7,7 +7,11 @@ import { JsonLd } from "@/components/JsonLd";
 import { RulesList } from "@/components/RulesList";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { isValidLocale } from "@/lib/i18n/types";
-import { buildItemListJsonLd, buildWebPageJsonLd } from "@/lib/json-ld";
+import {
+  buildFaqJsonLd,
+  buildItemListJsonLd,
+  buildWebPageJsonLd,
+} from "@/lib/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 
 type PageProps = {
@@ -46,6 +50,7 @@ export default async function RulesPage({ params }: PageProps) {
       path: "/rules",
     }),
     buildItemListJsonLd(dict.rules.title, dict.rules.items),
+    buildFaqJsonLd(dict.rules.faq),
   ];
 
   return (

@@ -66,6 +66,7 @@ export type Dictionary = {
   rules: {
     title: string;
     items: string[];
+    faq: Array<{ question: string; answer: string }>;
   };
   tips: {
     title: string;
