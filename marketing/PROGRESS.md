@@ -60,6 +60,8 @@
 | `GOOGLE_SITE_VERIFICATION` 环境变量 | 2026-06 | 用户已配置 GSC |
 | GSC 提交 sitemap | 2026-06 | 在「站点地图」提交 `sitemap.xml`（非网址检查） |
 | GSC 请求收录 `/en/rules` | 2026-06-11 | 针对 props 长尾词 |
+| GSC 重新请求收录 `/en/rules`（加深后） | 2026-06-12 | 部署 commit `5e3533f` 后 |
+| GSC 重新请求收录 `/en/halloween-charades`（加深后） | 2026-06-12 | 部署 commit `5e3533f` 后 |
 | GSC 请求收录新页面 | 2026-06-12 | halloween-charades、team-building-charades、about、charades-for-classroom |
 | GSC 重新抓取 sitemap | 2026-06-12 | 站点地图页重新提交 |
 | Bing 提交 sitemap | 2026-06-12 | `https://how-to-play-charades.com/sitemap.xml` |
@@ -104,7 +106,7 @@
 | 再发 Pinterest Pin（如 Christmas） | 未做 | 素材可复用 `marketing/pins/` 流程 |
 | 每月新增 2–4 篇博客 | 未开始 | 长期内容计划 |
 | `marketing/reddit-replies.md` 归档 6 条帖+回复 | 未做 | 可选，便于复用 |
-| GSC 重新请求收录加深后的 `/en/rules`、`/en/halloween-charades` | 未做 | 部署后执行 |
+| GSC 重新请求收录加深后的 `/en/rules`、`/en/halloween-charades` | ✅ 已完成 | 2026-06-12 |
 | 加深 `/en/charades-words` 完整词表 | 未做 | 内容质量 P1 |
 | 加深 `/en/blog/charades-for-classroom` 15 分钟教案 | 未做 | 内容质量 P1 |
 
@@ -132,6 +134,7 @@
 | 2026-06-11 | 记录 GSC 数据基线；标记今日任务 1–5 完成（规则页、GSC 收录、Reddit×2、Bing、www） |
 | 2026-06-12 | GSC 补收录 4 个新 URL；GSC 重新抓取 sitemap；Bing 提交 sitemap |
 | 2026-06-12 | 规则页 + Halloween 专题页内容加深（手势表、62 词、派对脚本） |
+| 2026-06-12 | 部署 `5e3533f`；GSC 重新收录 rules + halloween-charades |
 
 ---
 
