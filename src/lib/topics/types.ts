@@ -20,6 +20,9 @@ export type TopicContent = {
     heading: string;
     paragraphs?: string[];
     list?: string[];
+    orderedList?: string[];
+    wordGrids?: Array<{ label: string; words: string[] }>;
+    table?: { headers: string[]; rows: string[][] };
   }>;
   cta: string;
 };

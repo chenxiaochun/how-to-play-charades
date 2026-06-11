@@ -172,7 +172,9 @@ const en: Dictionary = {
     ],
   },
   rules: {
-    title: "Charades Game Rules",
+    title: "Core Charades Rules",
+    intro:
+      "Charades is a guessing game where one player mimes a word or phrase while teammates guess before time runs out. These official-style rules work for family nights, classrooms, and parties. Agree on house rules before you start—especially for kids, themed rounds, or competitive scoring.",
     items: [
       "No verbal hints or sounds—only non-verbal actions and gestures.",
       "No props—use body movement only to express the word.",
@@ -180,8 +182,87 @@ const en: Dictionary = {
       "You may signal category, word length, and syllable count with standard gestures.",
       "Be respectful and encourage all players to keep the game fun.",
       "Pick age-appropriate words, especially when children are playing.",
-      "Skip a word if you cannot act it out fairly.",
+      "Skip a word if you cannot act it out fairly—most groups allow one pass per round.",
     ],
+    gestures: {
+      heading: "Standard Charades Hand Signals",
+      intro:
+        "Learning a few universal gestures speeds up guessing and reduces arguments. Signal the category first, then word count, then act the answer.",
+      gestureColumn: "Gesture",
+      meaningColumn: "Meaning",
+      rows: [
+        { gesture: "Hold up fingers", meaning: "Number of words in the phrase" },
+        { gesture: "Tap arm / leg for each tap", meaning: "Syllable count for the current word" },
+        { gesture: "Tug your ear", meaning: "Sounds like (rhyme or similar sound)" },
+        { gesture: "Wave hands together", meaning: "The whole phrase at once" },
+        { gesture: "Open hands like a book", meaning: "Book title" },
+        { gesture: "Crank an old film camera", meaning: "Movie title" },
+        { gesture: "Draw a square in the air", meaning: "TV show" },
+        { gesture: "Make quotation marks with fingers", meaning: "Quote or saying" },
+        { gesture: "Point to ear, then mouth closed", meaning: "Song title (no singing)" },
+        { gesture: "Hands on hips, stand tall", meaning: "Person or celebrity" },
+        { gesture: "Pretend to peel / eat", meaning: "Food or drink" },
+        { gesture: "Flap arms or crawl", meaning: "Animal" },
+        { gesture: "Short word: thumb and finger close", meaning: "A short word is coming" },
+        { gesture: "Long word: hands wide apart", meaning: "A long word is coming" },
+        { gesture: "Brush shoulders off", meaning: "Skip / pass this word" },
+      ],
+    },
+    exampleRounds: {
+      heading: "Example Rounds (How to Act & Guess)",
+      intro:
+        "These walkthroughs show how gestures and mime work together. Read them aloud once before your first game so new players know what “good” looks like.",
+      wordLabel: "Word",
+      rounds: [
+        {
+          title: "Single word — Easy animal",
+          word: "Elephant",
+          steps: [
+            "Signal category: flap arms slightly or mime a trunk with your arm.",
+            "Hold up one finger for one word.",
+            "Tap your arm once for two syllables (el-e-phant = three—tap three times).",
+            "Mime a trunk, large ears, and slow heavy walking.",
+            "If teammates guess wrong, exaggerate size and trunk motion—do not mouth the word.",
+          ],
+        },
+        {
+          title: "Two-word phrase — Halloween party",
+          word: "Haunted house",
+          steps: [
+            "Hold up two fingers for two words.",
+            "Act word 1: hands up, spooky face, tiptoe like something scary is near.",
+            "Point to guessers who said the first word correctly, then hold up one finger for word 2.",
+            "Act word 2: draw a roof with hands, open a “door,” step inside cautiously.",
+            "Link both: spooky walk toward an imaginary door and enter.",
+          ],
+        },
+        {
+          title: "Movie title — Family group",
+          word: "The Lion King",
+          steps: [
+            "Crank the film camera gesture for movie.",
+            "Hold up three fingers (The / Lion / King).",
+            "Skip “The” with a small wave—many groups treat articles as optional.",
+            "Mime a mane, roar silently, then hold hands like a crown for “King.”",
+            "If stuck, tug ear and mime “lying” for “lion” sounds like—only if your group allows sounds-like hints.",
+          ],
+        },
+      ],
+    },
+    scoring: {
+      heading: "Scoring & Turn Order",
+      paragraphs: [
+        "Charades does not require scoring—many groups play for laughs only. If you want a winner, use simple team points so rounds stay fast.",
+        "A standard competitive round lasts 60 seconds. The actor draws a new word after each correct guess or skip until time expires.",
+      ],
+      list: [
+        "1 point per correct guess before the timer ends.",
+        "0 points for a skip; the word goes back in the pool or is discarded—decide before the game.",
+        "If time runs out mid-word, no point (or half point for “close” guesses—house rule only).",
+        "Alternate teams each round; rotate actors within the team so everyone performs.",
+        "Play to 10–15 points or set a 20-minute time cap for casual parties.",
+      ],
+    },
     faq: [
       {
         question: "Can You Use Props in Charades?",
@@ -197,6 +278,31 @@ const en: Dictionary = {
         question: "What can you use instead of props?",
         answer:
           "Use classic charades gestures: hold up fingers for word count or syllables, tug your ear for “sounds like,” or frame your hands to show a short word vs. a long phrase. Facial expressions and clear body mime work better than any object.",
+      },
+      {
+        question: "Can you make sounds or mouth words?",
+        answer:
+          "No. Lip-syncing syllables, humming, whispering, or mouth shapes that spell the answer are not allowed in standard rules. Silent facial expressions and exaggerated body movement are fine.",
+      },
+      {
+        question: "How long is a charades round?",
+        answer:
+          "Most groups use 45–90 seconds per turn. Sixty seconds is the usual default for mixed ages. Younger children often get 90 seconds; competitive adult games sometimes use 45 seconds for faster pace.",
+      },
+      {
+        question: "Can you skip or pass a word?",
+        answer:
+          "Yes, in most casual games. A common house rule is one skip per turn without penalty. Tournament-style play may charge a point for each skip—decide before you start.",
+      },
+      {
+        question: "What if nobody guesses before time runs out?",
+        answer:
+          "Reveal the word briefly, then move to the next team. No points are awarded. Use hard words as a signal to adjust your list toward easier categories next round.",
+      },
+      {
+        question: "House rules vs. standard rules—what's the difference?",
+        answer:
+          "Standard rules ban props, speech, and real-object pointing. House rules might allow costume charades at Halloween, picture cards for toddlers, or open guessing (anyone can shout answers). Write your exceptions on a sticky note so guests agree upfront.",
       },
     ],
   },

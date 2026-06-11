@@ -2,6 +2,8 @@
 
 Site: https://how-to-play-charades.com
 
+> **进度追踪：** 已完成 / 待办清单见 [`PROGRESS.md`](./PROGRESS.md)。做完推广动作后请更新该文件。
+
 ---
 
 ## Reddit（低调版，适合评论/回复，而非硬广帖）

@@ -1,0 +1,14 @@
+---
+description: 推广与 SEO 任务进度——避免重复询问已完成事项
+alwaysApply: true
+---
+
+# 推广 / SEO 进度追踪
+
+进行推广、SEO、外链、GSC、Bing、Reddit、Pinterest、AlternativeTo 相关工作时：
+
+1. **先读** `marketing/PROGRESS.md`，了解已完成与待办
+2. **不要重复建议**「已完成」或「暂不需要做」区块中的事项
+3. **用户确认完成**或**你自动完成**某项后，**立即更新** `marketing/PROGRESS.md`（状态、日期、更新日志）
+4. 外链文案参考 `marketing/outreach-en.md`；Pinterest 流程见 `marketing/pins/`
+5. 主域名统一用 `https://how-to-play-charades.com`（不带 www）

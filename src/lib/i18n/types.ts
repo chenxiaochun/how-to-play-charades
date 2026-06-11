@@ -65,7 +65,26 @@ export type Dictionary = {
   };
   rules: {
     title: string;
+    intro: string;
     items: string[];
+    gestures: {
+      heading: string;
+      intro: string;
+      gestureColumn: string;
+      meaningColumn: string;
+      rows: Array<{ gesture: string; meaning: string }>;
+    };
+    exampleRounds: {
+      heading: string;
+      intro: string;
+      wordLabel: string;
+      rounds: Array<{ title: string; word: string; steps: string[] }>;
+    };
+    scoring: {
+      heading: string;
+      paragraphs: string[];
+      list: string[];
+    };
     faq: Array<{ question: string; answer: string }>;
   };
   tips: {
