@@ -60,8 +60,8 @@
 | `GOOGLE_SITE_VERIFICATION` 环境变量 | 2026-06 | 用户已配置 GSC |
 | GSC 提交 sitemap | 2026-06 | 在「站点地图」提交 `sitemap.xml`（非网址检查） |
 | GSC 请求收录 `/en/rules` | 2026-06-11 | 针对 props 长尾词 |
-| GSC 重新请求收录 `/en/rules`（加深后） | 2026-06-12 | 部署 commit `5e3533f` 后 |
-| GSC 重新请求收录 `/en/halloween-charades`（加深后） | 2026-06-12 | 部署 commit `5e3533f` 后 |
+| GSC 重新请求收录 `/en/rules`（加深后） | 2026-06-12 | 部署 commit `5e3533f` 后；网址检查确认 **已编入索引** + FAQ/Breadcrumb 结构化数据有效 |
+| GSC 重新请求收录 `/en/halloween-charades`（加深后） | 2026-06-12 | 部署 commit `5e3533f` 后；网址检查确认 **已编入索引** |
 | GSC 请求收录新页面 | 2026-06-12 | halloween-charades、team-building-charades、about、charades-for-classroom |
 | GSC 重新抓取 sitemap | 2026-06-12 | 站点地图页重新提交 |
 | Bing 提交 sitemap | 2026-06-12 | `https://how-to-play-charades.com/sitemap.xml` |
@@ -135,6 +135,7 @@
 | 2026-06-12 | GSC 补收录 4 个新 URL；GSC 重新抓取 sitemap；Bing 提交 sitemap |
 | 2026-06-12 | 规则页 + Halloween 专题页内容加深（手势表、62 词、派对脚本） |
 | 2026-06-12 | 部署 `5e3533f`；GSC 重新收录 rules + halloween-charades |
+| 2026-06-12 | 网址检查确认 `/en/rules`（含 FAQ 结构化数据）与 `/en/halloween-charades` 均已编入索引 |
 
 ---
 
