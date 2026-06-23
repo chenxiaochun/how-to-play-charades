@@ -2,7 +2,7 @@
 
 > **给 AI / 协作者：** 开始任何推广、SEO、外链相关任务前，先读本文件。完成或确认某项后，立即更新对应行的状态与日期。不要重复询问已标记为 ✅ 的事项，除非用户明确要求复查。
 
-**最后更新：** 2026-06-23（AlternativeTo 提交）  
+**最后更新：** 2026-06-23（Quora 首条回答）  
 **主域名：** https://how-to-play-charades.com  
 **Vercel 项目：** charades（chenxiaochuns-projects）
 
@@ -80,6 +80,7 @@
 | Reddit r/Teachers 回复 | 2026-06-11 | 用户称 Reddit 1–2 条均完成 |
 | AlternativeTo 正确提交流程文档化 | 2026-06 | `marketing/outreach-en.md`（旧 /submit/ 链接已 404） |
 | AlternativeTo 提交新应用 | 2026-06-23 | 用户确认已提交；审核约数天 |
+| Quora 回答问题带链接 | 2026-06-23 | 用户确认已发 1 条；文案见 `outreach-en.md` |
 
 ---
 
@@ -102,7 +103,7 @@
 | AdSense 广告位 slot ID | 未做 | 需创建广告单元并配置 `NEXT_PUBLIC_ADSENSE_SLOT` |
 | AdSense 审核通过 | 等待中 | 保持内容、隐私政策、ads.txt |
 | Reddit 帖下有人回复时互动 | 持续 | 不必主动刷帖 |
-| Quora 回答问题带链接 | 未做 | 文案见 `outreach-en.md` |
+| Quora 继续回答（目标 3–4 条） | 进行中 | 已发 1 条（2026-06-23）；间隔几天再发，勿复制粘贴 |
 | 再发 Pinterest Pin（如 Christmas） | 未做 | 素材可复用 `marketing/pins/` 流程 |
 | 每月新增 2–4 篇博客 | 未开始 | 长期内容计划 |
 | `marketing/reddit-replies.md` 归档 6 条帖+回复 | 未做 | 可选，便于复用 |
@@ -137,6 +138,7 @@
 | 2026-06-12 | 部署 `5e3533f`；GSC 重新收录 rules + halloween-charades |
 | 2026-06-12 | 网址检查确认 `/en/rules`（含 FAQ 结构化数据）与 `/en/halloween-charades` 均已编入索引 |
 | 2026-06-23 | 用户确认 AlternativeTo 已提交（Suggest new application） |
+| 2026-06-23 | 用户确认 Quora 已发 1 条回答 |
 
 ---
 
