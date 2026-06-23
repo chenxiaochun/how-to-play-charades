@@ -2,7 +2,7 @@
 
 > **给 AI / 协作者：** 开始任何推广、SEO、外链相关任务前，先读本文件。完成或确认某项后，立即更新对应行的状态与日期。不要重复询问已标记为 ✅ 的事项，除非用户明确要求复查。
 
-**最后更新：** 2026-06-12（内容加深）  
+**最后更新：** 2026-06-23（AlternativeTo 提交）  
 **主域名：** https://how-to-play-charades.com  
 **Vercel 项目：** charades（chenxiaochuns-projects）
 
@@ -79,6 +79,7 @@
 | Reddit r/boardgames 回复 | 2026-06-11 | [High quality charades ideas](https://www.reddit.com/r/boardgames/comments/1tuuanr/high_quality_charades_ideas/) |
 | Reddit r/Teachers 回复 | 2026-06-11 | 用户称 Reddit 1–2 条均完成 |
 | AlternativeTo 正确提交流程文档化 | 2026-06 | `marketing/outreach-en.md`（旧 /submit/ 链接已 404） |
+| AlternativeTo 提交新应用 | 2026-06-23 | 用户确认已提交；审核约数天 |
 
 ---
 
@@ -86,7 +87,6 @@
 
 | 任务 | 最早执行日 | 优先级 | 说明 |
 |------|------------|--------|------|
-| 提交 AlternativeTo | 注册满 **7 天后** | P1 | 头像 → Suggest new application；文案见 `outreach-en.md` |
 | GSC 复查 props 词排名与点击 | **2026-06-25** 起 | P1 | 查 `can you use props in charades` |
 | Bing 展示数据复查 | **2026-06-25** 起 | P2 | Bing Webmaster 性能报告 |
 
@@ -136,6 +136,7 @@
 | 2026-06-12 | 规则页 + Halloween 专题页内容加深（手势表、62 词、派对脚本） |
 | 2026-06-12 | 部署 `5e3533f`；GSC 重新收录 rules + halloween-charades |
 | 2026-06-12 | 网址检查确认 `/en/rules`（含 FAQ 结构化数据）与 `/en/halloween-charades` 均已编入索引 |
+| 2026-06-23 | 用户确认 AlternativeTo 已提交（Suggest new application） |
 
 ---
 
