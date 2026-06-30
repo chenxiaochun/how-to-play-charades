@@ -6,23 +6,21 @@
 
 ---
 
-## 已发布
+## 已发布（共 3 条）
 
 ### 1. Family reunion（2026-06-23）
 
 **问题（参考）：** What are good games for a family reunion with kids and grandparents?
 
-**正文：** 见 `outreach-en.md` → Quora 区块。
+**正文：** 见 `outreach-en.md` → Quora 场景 A。
 
 ---
 
-## 待发布（文案已备好）
-
-### 2. EFL 课堂词汇游戏
+### 2. EFL 课堂词汇游戏（2026-06-30）
 
 **问题：** [What are some great word games to play in class for learners of English as a foreign language?](https://www.quora.com/What-are-some-great-word-games-to-play-in-class-for-learners-of-English-as-a-foreign-language)
 
-**建议正文（发布前可微调）：**
+**正文：**
 
 ```
 Charades is underrated for EFL because it forces meaning without translation drills.
@@ -42,11 +40,11 @@ Pair it with Pictionary for variety; charades is better when you want zero mater
 
 ---
 
-### 3. 朋友与家人文字游戏
+### 3. 朋友与家人文字游戏（2026-06-30）
 
 **问题：** [What are some good word games to play with friends and family?](https://www.quora.com/What-are-some-good-word-games-to-play-with-friends-and-family)
 
-**建议正文（发布前可微调）：**
+**正文：**
 
 ```
 For mixed ages at home, my go-to stack is:
@@ -64,6 +62,6 @@ Tip: agree on house rules first (especially "no props" vs costume charades at pa
 
 ## 发布清单
 
-- [ ] 回答 2：EFL 课堂词汇游戏
-- [ ] 回答 3：朋友与家人文字游戏
-- [ ] 发布后更新 `PROGRESS.md` 站外推广区块
+- [x] 回答 1：Family reunion（2026-06-23）
+- [x] 回答 2：EFL 课堂词汇游戏（2026-06-30）
+- [x] 回答 3：朋友与家人文字游戏（2026-06-30）

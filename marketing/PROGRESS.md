@@ -2,7 +2,7 @@
 
 > **给 AI / 协作者：** 开始任何推广、SEO、外链相关任务前，先读本文件。完成或确认某项后，立即更新对应行的状态与日期。不要重复询问已标记为 ✅ 的事项，除非用户明确要求复查。
 
-**最后更新：** 2026-06-30（GSC 公开复查 + Quora 文案 2 条）  
+**最后更新：** 2026-06-30（Quora 累计 3 条已发布）  
 **主域名：** https://how-to-play-charades.com  
 **Vercel 项目：** charades（chenxiaochuns-projects）
 
@@ -88,7 +88,7 @@
 | Reddit r/Teachers 回复 | 2026-06-11 | 用户称 Reddit 1–2 条均完成 |
 | AlternativeTo 正确提交流程文档化 | 2026-06 | `marketing/outreach-en.md`（旧 /submit/ 链接已 404） |
 | AlternativeTo 提交新应用 | 2026-06-23 | 用户确认已提交；审核约数天 |
-| Quora 回答问题带链接 | 2026-06-23 | 用户确认已发 1 条；文案见 `outreach-en.md` |
+| Quora 回答问题带链接 | 2026-06-23~30 | 共 **3 条**：family reunion（6/23）、EFL 课堂、朋友家人文字游戏；归档见 `quora-replies.md` |
 
 ---
 
@@ -110,7 +110,7 @@
 | AdSense 广告位 slot ID | 未做 | 需创建广告单元并配置 `NEXT_PUBLIC_ADSENSE_SLOT` |
 | AdSense 审核通过 | 等待中 | 保持内容、隐私政策、ads.txt |
 | Reddit 帖下有人回复时互动 | 持续 | 不必主动刷帖 |
-| Quora 继续回答（目标 3–4 条） | 进行中 | 已发 1 条；**文案已备 2 条**见 `marketing/quora-replies.md`，待发布 |
+| Quora 继续回答（目标 3–4 条） | ✅ 已完成 | 共 3 条（2026-06-30 达下限）；可选间隔数天再发第 4 条 |
 | 再发 Pinterest Pin（如 Christmas） | 未做 | 素材可复用 `marketing/pins/` 流程 |
 | 每月新增 2–4 篇博客 | 未开始 | 长期内容计划 |
 | `marketing/quora-replies.md` 归档帖+回复 | ✅ 已完成 | 2026-06-30；含 3 条场景 |
@@ -151,6 +151,7 @@
 | 2026-06-30 | charades-words 360 词表 + classroom 15 分钟教案（中英双语） |
 | 2026-06-30 | 用户确认 GSC 已请求收录加深后的 charades-words 与 classroom 博客 |
 | 2026-06-30 | GSC/Bing 公开检索复查；props 词有机前 10 仍为竞品；Quora 文案 2 条归档 |
+| 2026-06-30 | 用户确认 Quora 再发 2 条（EFL 课堂 + 朋友家人文字游戏），累计 3 条 |
 
 ---
 
