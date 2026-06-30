@@ -2,7 +2,7 @@
 
 > **给 AI / 协作者：** 开始任何推广、SEO、外链相关任务前，先读本文件。完成或确认某项后，立即更新对应行的状态与日期。不要重复询问已标记为 ✅ 的事项，除非用户明确要求复查。
 
-**最后更新：** 2026-06-23（Quora 首条回答）  
+**最后更新：** 2026-06-30（charades-words + classroom 内容加深）  
 **主域名：** https://how-to-play-charades.com  
 **Vercel 项目：** charades（chenxiaochuns-projects）
 
@@ -49,6 +49,8 @@
 | www → apex 308 重定向 | 2026-06-11 | Vercel Domains 已配置；curl 验证 308→主域名 |
 | 规则页深度内容（手势表、示例回合、计分、8 条 FAQ） | 2026-06-12 | `src/lib/i18n/en.ts`、`zh.ts` + `RulesList.tsx` |
 | Halloween 专题页深度内容（62 词、派对脚本、规则对照表） | 2026-06-12 | `src/lib/topics/en.ts`、`zh.ts` + `TopicPage.tsx` |
+| charades-words 完整词表（360 词、11 类 wordGrids） | 2026-06-30 | `src/lib/topics/en.ts`、`zh.ts` |
+| classroom 博客 15 分钟教案 | 2026-06-30 | `src/lib/blog/en.ts`、`zh.ts` |
 
 ---
 
@@ -108,8 +110,8 @@
 | 每月新增 2–4 篇博客 | 未开始 | 长期内容计划 |
 | `marketing/reddit-replies.md` 归档 6 条帖+回复 | 未做 | 可选，便于复用 |
 | GSC 重新请求收录加深后的 `/en/rules`、`/en/halloween-charades` | ✅ 已完成 | 2026-06-12 |
-| 加深 `/en/charades-words` 完整词表 | 未做 | 内容质量 P1 |
-| 加深 `/en/blog/charades-for-classroom` 15 分钟教案 | 未做 | 内容质量 P1 |
+| 加深 `/en/charades-words` 完整词表 | ✅ 已完成 | 2026-06-30；360 词、11 类 |
+| 加深 `/en/blog/charades-for-classroom` 15 分钟教案 | ✅ 已完成 | 2026-06-30 |
 
 ---
 
@@ -139,6 +141,7 @@
 | 2026-06-12 | 网址检查确认 `/en/rules`（含 FAQ 结构化数据）与 `/en/halloween-charades` 均已编入索引 |
 | 2026-06-23 | 用户确认 AlternativeTo 已提交（Suggest new application） |
 | 2026-06-23 | 用户确认 Quora 已发 1 条回答 |
+| 2026-06-30 | charades-words 360 词表 + classroom 15 分钟教案（中英双语） |
 
 ---
 

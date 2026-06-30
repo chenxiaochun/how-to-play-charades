@@ -303,22 +303,64 @@ const en: BlogMap = {
   "charades-for-classroom": {
     slug: "charades-for-classroom",
     meta: {
-      title: "Charades for the Classroom - ESL & Vocabulary Activities",
+      title: "Charades for the Classroom - 15-Min Lesson Plan & ESL Activities",
       description:
-        "Use charades in the classroom for ESL, vocabulary review, and active learning. Rules, word ideas, and tips for teachers.",
+        "A complete 15-minute charades lesson plan for teachers: ESL warm-ups, vocabulary review, classroom-safe rules, word lists by subject, and differentiation tips.",
     },
     excerpt:
-      "Teachers: use charades for vocabulary review, ESL speaking warm-ups, and kinesthetic learning—with classroom-safe rules.",
+      "Teachers: run a full 15-minute charades lesson with a timed script, classroom-safe rules, subject word lists, and ESL differentiation tips.",
     date: "June 14, 2026",
     datePublished: "2026-06-14",
-    dateModified: "2026-06-14",
+    dateModified: "2026-06-30",
     author: "Charades Game Team",
     sections: [
       {
         heading: "Why Charades Works in Class",
         paragraphs: [
           "Charades turns vocabulary into movement, which helps memory and engagement—especially for ESL learners and younger students.",
-          "It also builds non-verbal communication skills and keeps energy high without competitive video games.",
+          "It also builds non-verbal communication skills and keeps energy high without competitive video games. One phone and a word list are enough—no printing required.",
+        ],
+      },
+      {
+        heading: "What You Need (2-Minute Prep)",
+        list: [
+          "A visible timer (project our free online game on a smartboard, or use a classroom clock).",
+          "8–12 vocabulary words from this week's unit—preview for cultural sensitivity.",
+          "Two teams or table groups; mini whiteboards optional for the silent-guess variant.",
+          "Front-of-room acting space; actors must stay in place—no running.",
+        ],
+      },
+      {
+        heading: "15-Minute Lesson Plan (Step by Step)",
+        paragraphs: [
+          "Use this script for a standard 25–30 student class. Adjust round length if your period is shorter; skip the whiteboard round to save 3 minutes.",
+        ],
+        orderedList: [
+          "0:00 — Quick hook: ask \"How do you act out 'elephant' without speaking?\" Accept mime answers.",
+          "1:00 — Review rules on the board: no talking, no props, no pointing at objects, 45–60 seconds per turn, passes allowed.",
+          "2:00 — Teacher demo: act one easy word (e.g. \"read\") with category gesture + clear mime. Class guesses aloud.",
+          "4:00 — Round 1 (Team A): 3 words from this week's list. Score 1 point per correct guess within time.",
+          "7:00 — Round 2 (Team B): same format, 3 different words.",
+          "10:00 — Silent whiteboard round: one actor, class writes guesses on boards, hold up together.",
+          "13:00 — Quick debrief: \"Which word was hardest to mime? Which gesture helped most?\"",
+          "15:00 — Exit ticket (optional): students write one new charades-friendly word from the unit for next week.",
+        ],
+        subsections: [
+          {
+            heading: "Differentiation for ESL",
+            content:
+              "Pair a confident speaker with a newer student for the first acting turn. Allow 75 seconds for ESL actors. Use picture-supported word cards for beginners; challenge advanced learners with verb phrases or idioms.",
+          },
+          {
+            heading: "Differentiation for Mixed Ages",
+            content:
+              "Grades K–2: easy nouns only, teacher acts first. Grades 3–5: add verbs and science terms. Grades 6+: allow medium phrases and literature characters from assigned reading.",
+          },
+          {
+            heading: "If You Have Only 10 Minutes",
+            content:
+              "Skip the whiteboard round and debrief. Run one demo + two team rounds (2 words each). Still hits vocabulary review and movement.",
+          },
         ],
       },
       {
@@ -328,21 +370,22 @@ const en: BlogMap = {
           "No speaking or mouthing words.",
           "Respectful acting only; teacher approves word list in advance.",
           "Use a visible timer (45–60 seconds).",
-          "Allow passes on words that feel too hard.",
+          "Allow passes on words that feel too hard—no penalty in practice rounds.",
         ],
       },
       {
         heading: "Word List Ideas by Subject",
         list: [
-          "Animals: elephant, penguin, butterfly, shark",
-          "Verbs: read, swim, cook, climb, celebrate",
-          "Jobs: doctor, engineer, artist, farmer",
-          "Science: volcano, magnet, plant growth, recycling",
-          "Literature: famous characters from assigned reading",
+          "Animals: elephant, penguin, butterfly, shark, kangaroo, owl",
+          "Verbs: read, swim, cook, climb, celebrate, apologize, meditate",
+          "Jobs: doctor, engineer, artist, farmer, veterinarian, astronaut",
+          "Science: volcano, magnet, plant growth, recycling, eclipse, microscope",
+          "Literature: characters from assigned reading (preview names first)",
+          "ESL daily routines: wake up, brush teeth, take the bus, eat lunch, do homework",
         ],
       },
       {
-        heading: "Activity Formats",
+        heading: "Activity Formats Beyond the 15-Min Plan",
         list: [
           "Vocabulary review before a quiz—teams act weekly word lists.",
           "ESL warm-up: act daily routines or classroom objects.",
@@ -356,6 +399,7 @@ const en: BlogMap = {
           "Preview words to avoid embarrassment or culturally sensitive topics.",
           "Pair confident students with shy partners for the first round.",
           "Project our free online charades game on a smartboard for instant word draws and category filters.",
+          "Celebrate creative mime, not just speed—this reduces anxiety for reluctant performers.",
         ],
       },
     ],

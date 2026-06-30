@@ -32,7 +32,7 @@ export function TopicPage({ locale, slug }: TopicPageProps) {
     inLanguage: locale === "zh" ? "zh-CN" : "en-US",
     author: { "@type": "Organization", name: "How to Play Charades" },
     datePublished: "2026-06-10",
-    dateModified: "2026-06-12",
+    dateModified: "2026-06-30",
   };
 
   return (
