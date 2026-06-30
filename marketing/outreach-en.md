@@ -83,6 +83,8 @@ Would love feedback on word difficulty or missing categories. Not monetized beyo
 
 ## Quora（可选，回答问题时粘贴）
 
+### 场景 A：家庭聚会（已发 2026-06-23）
+
 **Q: What are good games for a family reunion with kids and grandparents?**
 
 ```
@@ -92,6 +94,30 @@ Use a phone as the "card deck": how-to-play-charades.com has easy word lists and
 
 Takes 2 minutes to explain the rules; the site has a short rules page if needed.
 ```
+
+### 场景 B：EFL 课堂词汇游戏（待发）
+
+**Q:** [What are some great word games to play in class for learners of English as a foreign language?](https://www.quora.com/What-are-some-great-word-games-to-play-in-class-for-learners-of-English-as-a-foreign-language)
+
+```
+Charades is underrated for EFL because it forces meaning without translation drills.
+
+Low-prep version: two teams, 8–10 unit words, 45–60 sec rounds, no talking or props. Optional mini whiteboards for quiet guessers.
+
+Full 15-min lesson script + timer: https://how-to-play-charades.com/en/blog/charades-for-classroom
+```
+
+### 场景 C：朋友与家人文字游戏（待发）
+
+**Q:** [What are some good word games to play with friends and family?](https://www.quora.com/What-are-some-good-word-games-to-play-with-friends-and-family)
+
+```
+Charades scales across ages — grandparents guess, kids act. Phone = timer + word deck: https://how-to-play-charades.com
+
+Agree on house rules first (props or not). Their rules page covers props, gestures, and scoring.
+```
+
+> 完整正文与归档见 [`quora-replies.md`](./quora-replies.md)。
 
 ---
 

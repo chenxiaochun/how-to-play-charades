@@ -2,7 +2,7 @@
 
 > **给 AI / 协作者：** 开始任何推广、SEO、外链相关任务前，先读本文件。完成或确认某项后，立即更新对应行的状态与日期。不要重复询问已标记为 ✅ 的事项，除非用户明确要求复查。
 
-**最后更新：** 2026-06-30（charades-words + classroom 内容加深）  
+**最后更新：** 2026-06-30（GSC 公开复查 + Quora 文案 2 条）  
 **主域名：** https://how-to-play-charades.com  
 **Vercel 项目：** charades（chenxiaochuns-projects）
 
@@ -17,9 +17,11 @@
 | GSC 平均排名 | ~33 | 2026-06 |
 | 突破口词 `can you use props in charades` | 排名 ~10.8 | 2026-06 |
 | 大词 `how to play charades` 等 | 排名 39–65 | 2026-06 |
-| Sitemap URL 数 | ~42–46 | 2026-06 |
+| Sitemap URL 数 | ~42 | 2026-06-30 |
+| 突破口词 `can you use props in charades`（公开检索） | 首页 `/en` 偶现 AI 摘要；有机前 10 未见 `/en/rules`；竞品 charades.io 有专用页 | 2026-06-30 |
+| GSC 精确展示/点击/排名 | 需登录 GSC「效果」查看 | — |
 
-**下次复查建议：** 2026-06-25 起（2 周后看 props 词与收录）
+**下次复查建议：** 2026-07-14 起（加深页索引稳定后 + props 词）
 
 ---
 
@@ -70,6 +72,10 @@
 | 规则页上线确认（含 Props FAQ） | 2026-06-11 | 用户确认 |
 | Bing Webmaster Tools 注册与验证 | 2026-06-11 | 用户确认「2,3,5都做了」 |
 | www 跳转检查 | 2026-06-11 | Vercel 308 正常；用户曾见 `/env-vars` 为偶发异常 |
+| GSC 重新请求收录 `/en/charades-words`（加深后） | 2026-06-30 | 部署 commit `dac97fd` 后；用户确认已请求编入索引 |
+| GSC 重新请求收录 `/en/blog/charades-for-classroom`（加深后） | 2026-06-30 | 15 分钟教案上线后；用户确认已请求编入索引 |
+| GSC 公开复查 props 词（有机/AI 摘要） | 2026-06-30 | AI 工具复查；`/en/rules` 未进 props 查询有机前 10；详见数据基线 |
+| Bing 公开收录抽查 | 2026-06-30 | `site:` 检索不可靠；需在 Bing Webmaster 看精确展示 |
 
 ---
 
@@ -90,8 +96,7 @@
 
 | 任务 | 最早执行日 | 优先级 | 说明 |
 |------|------------|--------|------|
-| GSC 复查 props 词排名与点击 | **2026-06-25** 起 | P1 | 查 `can you use props in charades` |
-| Bing 展示数据复查 | **2026-06-25** 起 | P2 | Bing Webmaster 性能报告 |
+| GSC 效果报告精确数据复查 | **2026-07-14** 起 | P1 | 登录 GSC 查 props 词展示/点击/排名，对比 6 月基线 |
 
 ---
 
@@ -105,13 +110,15 @@
 | AdSense 广告位 slot ID | 未做 | 需创建广告单元并配置 `NEXT_PUBLIC_ADSENSE_SLOT` |
 | AdSense 审核通过 | 等待中 | 保持内容、隐私政策、ads.txt |
 | Reddit 帖下有人回复时互动 | 持续 | 不必主动刷帖 |
-| Quora 继续回答（目标 3–4 条） | 进行中 | 已发 1 条（2026-06-23）；间隔几天再发，勿复制粘贴 |
+| Quora 继续回答（目标 3–4 条） | 进行中 | 已发 1 条；**文案已备 2 条**见 `marketing/quora-replies.md`，待发布 |
 | 再发 Pinterest Pin（如 Christmas） | 未做 | 素材可复用 `marketing/pins/` 流程 |
 | 每月新增 2–4 篇博客 | 未开始 | 长期内容计划 |
+| `marketing/quora-replies.md` 归档帖+回复 | ✅ 已完成 | 2026-06-30；含 3 条场景 |
 | `marketing/reddit-replies.md` 归档 6 条帖+回复 | 未做 | 可选，便于复用 |
 | GSC 重新请求收录加深后的 `/en/rules`、`/en/halloween-charades` | ✅ 已完成 | 2026-06-12 |
 | 加深 `/en/charades-words` 完整词表 | ✅ 已完成 | 2026-06-30；360 词、11 类 |
 | 加深 `/en/blog/charades-for-classroom` 15 分钟教案 | ✅ 已完成 | 2026-06-30 |
+| GSC 重新请求收录加深后的 `/en/charades-words`、`/en/blog/charades-for-classroom` | ✅ 已完成 | 2026-06-30 |
 
 ---
 
@@ -142,6 +149,8 @@
 | 2026-06-23 | 用户确认 AlternativeTo 已提交（Suggest new application） |
 | 2026-06-23 | 用户确认 Quora 已发 1 条回答 |
 | 2026-06-30 | charades-words 360 词表 + classroom 15 分钟教案（中英双语） |
+| 2026-06-30 | 用户确认 GSC 已请求收录加深后的 charades-words 与 classroom 博客 |
+| 2026-06-30 | GSC/Bing 公开检索复查；props 词有机前 10 仍为竞品；Quora 文案 2 条归档 |
 
 ---
 
